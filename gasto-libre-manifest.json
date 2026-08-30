@@ -1,0 +1,13 @@
+{
+  "name": "Gasto Libre",
+  "short_name": "Gasto Libre",
+  "description": "Tu sobre semanal de gastos.",
+  "lang": "es",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#dcd5c3",
+  "theme_color": "#1f6f5c",
+  "icons": [
+    { "src": "gasto-libre-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
