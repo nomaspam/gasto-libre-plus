@@ -173,6 +173,23 @@
       </div>
     </section>
 
+    <button
+      type="button"
+      id="btn-toggle-all-expenses"
+      class="w-full py-3 rounded-2xl border-2 border-[#1B5E4C] text-[#1B5E4C] hover:bg-[#1B5E4C] hover:text-white font-bold text-sm transition-all"
+    >
+      Ver todos los gastos
+    </button>
+
+    <section id="all-expenses-section" class="hidden bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-3">
+      <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
+        TODOS LOS GASTOS
+      </div>
+      <div id="all-expenses-list" class="flex flex-col gap-2">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
     <!-- CARD 5: HISTORIAL DE MESES -->
     <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-3">
       <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
@@ -692,6 +709,35 @@
       recentList.innerHTML = `<div class="text-center py-4 text-xs text-[#8B938F]">Hoy no hay transacciones registradas.</div>`;
     }
 
+    // 6a. All expenses, grouped by month
+    const allExpensesList = document.getElementById('all-expenses-list');
+    const allByMonth = {};
+    expenses.forEach(exp => {
+      const d = new Date(exp.date);
+      const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+      (allByMonth[key] ||= []).push(exp);
+    });
+    allExpensesList.innerHTML = '';
+    Object.keys(allByMonth).sort().reverse().forEach(key => {
+      const monthDate = new Date(`${key}-02T12:00:00`);
+      allExpensesList.innerHTML += `<div class="pt-3 first:pt-0 text-xs uppercase font-bold text-[#1B5E4C] border-t border-dashed border-[#DDD5C4] first:border-t-0">${monthDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}</div>`;
+      allByMonth[key].sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(exp => {
+        const catObj = CATEGORIES.find(c => c.id === exp.category) || CATEGORIES[4];
+        const when = new Date(exp.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
+        allExpensesList.innerHTML += `
+          <div class="flex justify-between items-center text-sm py-2 border-b border-[#EBE5D8] last:border-0">
+            <div class="flex items-center gap-2.5 min-w-0">
+              <div class="p-1.5 rounded-lg ${catObj.bgLight} ${catObj.text} text-xs font-bold">${catObj.name[0]}</div>
+              <span class="font-semibold text-[#353F3B] truncate">${escapeHTML(exp.name)} <span class="font-normal text-xs text-[#8B938F]">· ${when}</span></span>
+            </div>
+            <span class="font-mono font-bold text-[#2C3531] ml-2">${formatEUR(exp.amount)}</span>
+          </div>`;
+      });
+    });
+    if (expenses.length === 0) {
+      allExpensesList.innerHTML = `<div class="text-center py-4 text-xs text-[#8B938F]">Todavía no hay gastos guardados.</div>`;
+    }
+
     // 6b. Category buttons for the edit modal (mismo estilo que el formulario principal)
     const editCatContainer = document.getElementById('edit-category-buttons');
     if (editCatContainer) {
@@ -873,6 +919,12 @@
     a.click();
     URL.revokeObjectURL(url);
     showToast('Copia descargada');
+  });
+
+  document.getElementById('btn-toggle-all-expenses').addEventListener('click', () => {
+    const section = document.getElementById('all-expenses-section');
+    const isHidden = section.classList.toggle('hidden');
+    document.getElementById('btn-toggle-all-expenses').textContent = isHidden ? 'Ver todos los gastos' : 'Ocultar todos los gastos';
   });
 
   // Import JSON Backup
