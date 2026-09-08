@@ -37,6 +37,16 @@
           Mi sobre semanal
         </h1>
       </div>
+      <div class="flex gap-2">
+      <button
+        id="btn-check-update"
+        type="button"
+        class="p-2.5 rounded-2xl bg-[#D9D3C3] hover:bg-[#CDC6B4] text-[#222E2A] transition-colors shadow-sm active:scale-95"
+        title="Buscar actualización"
+        aria-label="Buscar actualización"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m14.836 2A7 7 0 005.582 9m0 0H9m11 11v-5h-.581m0 0a7.001 7.001 0 01-14.837-2M15 15h-3"/></svg>
+      </button>
       <button 
         id="btn-open-settings"
         class="p-2.5 rounded-2xl bg-[#D9D3C3] hover:bg-[#CDC6B4] text-[#222E2A] transition-colors shadow-sm active:scale-95"
@@ -44,6 +54,7 @@
       >
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
       </button>
+      </div>
     </header>
 
     <!-- CARD 1: OVERVIEW -->
@@ -392,6 +403,17 @@
 </div>
 
 <!-- TOAST -->
+<div id="update-notice" class="hidden fixed left-4 right-4 z-50 bg-[#222E2A] text-white rounded-2xl shadow-xl p-4" style="top: max(1rem, env(safe-area-inset-top));">
+  <div class="flex items-start gap-3">
+    <svg class="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <div class="flex-1">
+      <div class="font-bold text-sm">Actualización lista</div>
+      <div class="text-xs mt-1 text-[#E5E0D3]">Cierra y vuelve a abrir la app para ver los cambios. Tus gastos siguen guardados.</div>
+    </div>
+    <button id="btn-close-update-notice" type="button" class="text-xs font-bold text-emerald-400">Vale</button>
+  </div>
+</div>
+
 <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 bg-[#222E2A] text-white px-4 py-2.5 rounded-2xl shadow-lg text-xs font-bold flex items-center gap-2 transition-all opacity-0 pointer-events-none z-50">
   <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
   <span id="toast-message">Mensaje</span>
@@ -990,7 +1012,70 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./gasto-libre-sw.js').catch(() => {});
+      let registration;
+      const updateButton = document.getElementById('btn-check-update');
+      const updateNotice = document.getElementById('update-notice');
+      const originalButton = updateButton.innerHTML;
+
+      const showUpdateNotice = () => updateNotice.classList.remove('hidden');
+      const watchInstallingWorker = (reg) => {
+        const worker = reg.installing;
+        if (!worker) return;
+        worker.addEventListener('statechange', () => {
+          if (worker.state === 'installed' && navigator.serviceWorker.controller) {
+            showUpdateNotice();
+          }
+        });
+      };
+
+      document.getElementById('btn-close-update-notice').addEventListener('click', () => {
+        updateNotice.classList.add('hidden');
+      });
+
+      updateButton.addEventListener('click', async () => {
+        updateButton.disabled = true;
+        updateButton.textContent = '…';
+        try {
+          registration ||= await navigator.serviceWorker.getRegistration();
+          if (!registration) {
+            showToast('No se pudo buscar la actualización');
+            return;
+          }
+
+          if (registration.waiting) {
+            showUpdateNotice();
+            return;
+          }
+
+          let updateFound = false;
+          const onUpdateFound = () => {
+            updateFound = true;
+            watchInstallingWorker(registration);
+          };
+          registration.addEventListener('updatefound', onUpdateFound, { once: true });
+          await registration.update();
+          await new Promise(resolve => setTimeout(resolve, 1200));
+
+          if (registration.waiting || updateFound) {
+            showUpdateNotice();
+          } else {
+            showToast('Ya tienes la última versión');
+          }
+        } catch (error) {
+          showToast('No se pudo buscar la actualización');
+        } finally {
+          updateButton.disabled = false;
+          updateButton.innerHTML = originalButton;
+        }
+      });
+
+      navigator.serviceWorker.register('./gasto-libre-sw.js')
+        .then(reg => {
+          registration = reg;
+          reg.addEventListener('updatefound', () => watchInstallingWorker(reg));
+          if (reg.waiting) showUpdateNotice();
+        })
+        .catch(() => {});
     });
   }
 </script>
