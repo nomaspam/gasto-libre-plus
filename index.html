@@ -1012,6 +1012,7 @@
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
+      const APP_VERSION = '2026-09-08-2';
       let registration;
       const updateButton = document.getElementById('btn-check-update');
       const updateNotice = document.getElementById('update-notice');
@@ -1054,9 +1055,14 @@
           };
           registration.addEventListener('updatefound', onUpdateFound, { once: true });
           await registration.update();
+          let newestVersion = APP_VERSION;
+          try {
+            const response = await fetch(`./gasto-libre-version.json?check=${Date.now()}`, { cache: 'no-store' });
+            if (response.ok) newestVersion = (await response.json()).version || APP_VERSION;
+          } catch (error) {}
           await new Promise(resolve => setTimeout(resolve, 1200));
 
-          if (registration.waiting || updateFound) {
+          if (newestVersion !== APP_VERSION || registration.waiting || updateFound) {
             showUpdateNotice();
           } else {
             showToast('Ya tienes la última versión');
