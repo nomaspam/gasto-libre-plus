@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'gasto-libre-';
-const CACHE = `${CACHE_PREFIX}v5`;
+const CACHE = `${CACHE_PREFIX}v6`;
 const APP_SHELL = './';
 const ASSETS = [APP_SHELL, './gasto-libre-manifest.json', './gasto-libre-icon.svg'];
 
