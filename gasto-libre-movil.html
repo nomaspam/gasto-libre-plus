@@ -3,23 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1B5E4C">
+  <meta name="theme-color" content="#F4F2FF">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Gasto Libre">
   <link rel="manifest" href="./gasto-libre-manifest.json">
   <link rel="icon" href="./gasto-libre-icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./gasto-libre-icon.svg">
-  <title>Gasto Libre</title>
+  <title>Gasto Libre 2.0.0</title>
   <!-- Tailwind CSS CDN -->
   <style>
 *,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.inset-0{inset:0}.bottom-5{bottom:1.25rem}.left-1\/2{left:50%}.z-50{z-index:50}.my-1{margin-top:.25rem;margin-bottom:.25rem}.-mt-1\.5{margin-top:-.375rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.block{display:block}.flex{display:flex}.hidden{display:none}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-full{height:100%}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-1\/3{width:33.333333%}.w-16{width:4rem}.w-2\/3{width:66.666667%}.w-24{width:6rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-full{width:100%}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.scale-105{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis;white-space:nowrap}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-\[\#1B5E4C\]{--tw-border-opacity:1;border-color:rgb(27 94 76/var(--tw-border-opacity,1))}.border-\[\#D9D3C3\]{--tw-border-opacity:1;border-color:rgb(217 211 195/var(--tw-border-opacity,1))}.border-\[\#E0DACB\]{--tw-border-opacity:1;border-color:rgb(224 218 203/var(--tw-border-opacity,1))}.border-\[\#E2DDD0\]{--tw-border-opacity:1;border-color:rgb(226 221 208/var(--tw-border-opacity,1))}.border-\[\#EBE5D8\]{--tw-border-opacity:1;border-color:rgb(235 229 216/var(--tw-border-opacity,1))}.bg-\[\#1B5E4C\]{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.bg-\[\#222E2A\]{--tw-bg-opacity:1;background-color:rgb(34 46 42/var(--tw-bg-opacity,1))}.bg-\[\#D9D3C3\]{--tw-bg-opacity:1;background-color:rgb(217 211 195/var(--tw-bg-opacity,1))}.bg-\[\#E2DDD0\]{--tw-bg-opacity:1;background-color:rgb(226 221 208/var(--tw-bg-opacity,1))}.bg-\[\#E5E0D3\]{--tw-bg-opacity:1;background-color:rgb(229 224 211/var(--tw-bg-opacity,1))}.bg-\[\#EBE5D8\]{--tw-bg-opacity:1;background-color:rgb(235 229 216/var(--tw-bg-opacity,1))}.bg-\[\#FAF7F0\]{--tw-bg-opacity:1;background-color:rgb(250 247 240/var(--tw-bg-opacity,1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199/var(--tw-bg-opacity,1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6/var(--tw-bg-opacity,1))}.bg-black\/40{background-color:rgba(0,0,0,.4)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255/var(--tw-bg-opacity,1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229/var(--tw-bg-opacity,1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity,1))}.bg-sky-100{--tw-bg-opacity:1;background-color:rgb(224 242 254/var(--tw-bg-opacity,1))}.bg-sky-600{--tw-bg-opacity:1;background-color:rgb(2 132 199/var(--tw-bg-opacity,1))}.bg-stone-200{--tw-bg-opacity:1;background-color:rgb(231 229 228/var(--tw-bg-opacity,1))}.bg-stone-500{--tw-bg-opacity:1;background-color:rgb(120 113 108/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-1{padding:.25rem}.p-1\.5{padding:.375rem}.p-2\.5{padding:.625rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-6{padding-bottom:1.5rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[11px\]{font-size:11px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.capitalize{text-transform:capitalize}.italic{font-style:italic}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-\[\#1B5E4C\]{--tw-text-opacity:1;color:rgb(27 94 76/var(--tw-text-opacity,1))}.text-\[\#222E2A\]{--tw-text-opacity:1;color:rgb(34 46 42/var(--tw-text-opacity,1))}.text-\[\#2C3531\]{--tw-text-opacity:1;color:rgb(44 53 49/var(--tw-text-opacity,1))}.text-\[\#353F3B\]{--tw-text-opacity:1;color:rgb(53 63 59/var(--tw-text-opacity,1))}.text-\[\#4A5450\]{--tw-text-opacity:1;color:rgb(74 84 80/var(--tw-text-opacity,1))}.text-\[\#525B56\]{--tw-text-opacity:1;color:rgb(82 91 86/var(--tw-text-opacity,1))}.text-\[\#6B726E\]{--tw-text-opacity:1;color:rgb(107 114 110/var(--tw-text-opacity,1))}.text-\[\#7A827E\]{--tw-text-opacity:1;color:rgb(122 130 126/var(--tw-text-opacity,1))}.text-\[\#858C88\]{--tw-text-opacity:1;color:rgb(133 140 136/var(--tw-text-opacity,1))}.text-\[\#8B938F\]{--tw-text-opacity:1;color:rgb(139 147 143/var(--tw-text-opacity,1))}.text-\[\#9CA3A0\]{--tw-text-opacity:1;color:rgb(156 163 160/var(--tw-text-opacity,1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38/var(--tw-text-opacity,1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199/var(--tw-text-opacity,1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.placeholder-\[\#C2BCAD\]::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(194 188 173/var(--tw-placeholder-opacity,1))}.placeholder-\[\#C2BCAD\]::placeholder{--tw-placeholder-opacity:1;color:rgb(194 188 173/var(--tw-placeholder-opacity,1))}.accent-\[\#1B5E4C\]{accent-color:#1b5e4c}.opacity-0{opacity:0}.opacity-100{opacity:1}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-md{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-sm,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.selection\:bg-\[\#1B5E4C\] ::-moz-selection{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.selection\:bg-\[\#1B5E4C\] ::selection{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.selection\:text-white ::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white ::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:bg-\[\#1B5E4C\]::-moz-selection{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.selection\:bg-\[\#1B5E4C\]::selection{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.selection\:text-white::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.last\:border-0:last-child{border-width:0}.hover\:bg-\[\#154B3D\]:hover{--tw-bg-opacity:1;background-color:rgb(21 75 61/var(--tw-bg-opacity,1))}.hover\:bg-\[\#1B5E4C\]:hover{--tw-bg-opacity:1;background-color:rgb(27 94 76/var(--tw-bg-opacity,1))}.hover\:bg-\[\#CDC6B4\]:hover{--tw-bg-opacity:1;background-color:rgb(205 198 180/var(--tw-bg-opacity,1))}.hover\:bg-\[\#E0DACB\]:hover{--tw-bg-opacity:1;background-color:rgb(224 218 203/var(--tw-bg-opacity,1))}.hover\:bg-\[\#F0ECE1\]:hover{--tw-bg-opacity:1;background-color:rgb(240 236 225/var(--tw-bg-opacity,1))}.hover\:bg-\[\#F3EFE6\]:hover{--tw-bg-opacity:1;background-color:rgb(243 239 230/var(--tw-bg-opacity,1))}.hover\:bg-\[\#FAF7F0\]:hover{--tw-bg-opacity:1;background-color:rgb(250 247 240/var(--tw-bg-opacity,1))}.hover\:text-\[\#1B5E4C\]:hover{--tw-text-opacity:1;color:rgb(27 94 76/var(--tw-text-opacity,1))}.hover\:text-black:hover{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\:ring-\[\#1B5E4C\]:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(27 94 76/var(--tw-ring-opacity,1))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
   </style>
   <style>
     body {
-      background-color: #E5E0D3;
-      color: #2C3531;
+      background: linear-gradient(160deg, #F3F1FF 0%, #F9F8FF 55%, #FFF2F8 100%);
+      background-attachment: fixed;
+      color: #29283A;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+    section {
+      box-shadow: 0 8px 24px rgba(71, 57, 117, 0.07);
+    }
+    .bg-\[\#FAF7F0\] { background-color: #FFFFFF; }
+    .bg-\[\#EBE5D8\] { background-color: #F3F0FC; }
+    .bg-\[\#D9D3C3\] { background-color: #E9E5F6; }
+    .bg-\[\#E2DDD0\] { background-color: #E8E3F2; }
+    .bg-\[\#F0ECE1\] { background-color: #F8F4FD; }
+    .border-\[\#E2DDD0\] { border-color: #E8E3F2; }
+    .border-\[\#E0DACB\] { border-color: #E5DFF0; }
+    .border-\[\#EBE5D8\] { border-color: #EEE9F6; }
+    .border-\[\#D9D3C3\] { border-color: #E5DFF0; }
+    .text-\[\#222E2A\] { color: #29283A; }
+    .text-\[\#2C3531\] { color: #333246; }
+    .text-\[\#353F3B\] { color: #3B3A4D; }
+    #week-label { color: #6656B3; }
+    #app-version { background-color: #6656B3; }
+    #btn-open-settings { background-color: #FBE3EF; color: #A12F6D; }
+    #btn-open-currency { background-color: #FFFFFF; border: 1px solid #E5DFF0; color: #5540B5; }
+    #btn-open-currency:hover { background-color: #F3F0FC; }
+    @media (max-width: 360px) {
+      header { flex-wrap: wrap; gap: 0.5rem; }
+      .header-actions { margin-left: auto; }
+    }
+    .bg-amber-600 { background-color: #E89A26; }
+    .bg-amber-100 { background-color: #FFF1D7; }
+    .text-amber-700 { color: #9A5600; }
+    .bg-indigo-600 { background-color: #7158D5; }
+    .bg-indigo-100 { background-color: #EEE8FF; }
+    .text-indigo-600 { color: #5540B5; }
+    .bg-emerald-600 { background-color: #1C9994; }
+    .bg-emerald-100 { background-color: #DDF6F3; }
+    .text-emerald-600 { color: #087A75; }
+    .bg-sky-600 { background-color: #DF4F91; }
+    .bg-sky-100 { background-color: #FFE4F0; }
+    .text-sky-600 { color: #A82F69; }
+    .bg-stone-500 { background-color: #4E78CC; }
+    .bg-stone-200 { background-color: #E4ECFF; }
+    .text-stone-500 { color: #315BAF; }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 0.35rem;
+    }
+    .calendar-weekday {
+      padding: 0.25rem 0;
+      color: #7A827E;
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-align: center;
+    }
+    .calendar-day {
+      position: relative;
+      min-height: 3.2rem;
+      padding: 0.35rem 0.15rem;
+      border: 1px solid transparent;
+      border-radius: 0.9rem;
+      color: #353F3B;
+      font-size: 0.78rem;
+      text-align: center;
+      transition: background-color 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .calendar-day:active { transform: scale(0.94); }
+    .calendar-day.has-expenses { background: #FCEAF3; }
+    .calendar-day.is-today { border-color: #1B5E4C; }
+    .calendar-day.is-selected { background: #1B5E4C; color: white; }
+    .calendar-day-total {
+      display: block;
+      margin-top: 0.15rem;
+      overflow: hidden;
+      font-size: 0.55rem;
+      font-weight: 800;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .calendar-expense-dot {
+      display: inline-block;
+      width: 0.3rem;
+      height: 0.3rem;
+      margin-top: 0.2rem;
+      border-radius: 9999px;
+      background: #DF4F91;
+    }
+    .analysis-chart {
+      display: grid;
+      align-items: end;
+      gap: 0.4rem;
+      min-height: 11rem;
+      padding: 0.75rem 0.25rem 0;
+      border-bottom: 1px solid #E5DFF0;
+      background: repeating-linear-gradient(to top, transparent 0, transparent calc(25% - 1px), #F0ECF8 calc(25% - 1px), #F0ECF8 25%);
+    }
+    .analysis-chart-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      gap: 0.45rem;
+      min-width: 0;
+      height: 11rem;
+    }
+    .analysis-chart-track {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      width: 100%;
+      height: 8.5rem;
+    }
+    .analysis-chart-fill {
+      width: min(72%, 2.1rem);
+      min-height: 0;
+      border-radius: 0.55rem 0.55rem 0 0;
+      background: #6656B3;
+      transition: height 0.25s ease;
+    }
+    .analysis-chart-label {
+      min-height: 1.4rem;
+      color: #525B56;
+      font-size: 0.7rem;
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .analysis-donut {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 9rem;
+      height: 9rem;
+      margin: 1rem auto;
+      border-radius: 50%;
+      background: #E9E5F4;
+    }
+    .analysis-donut::after {
+      content: '';
+      width: 62%;
+      height: 62%;
+      border-radius: 50%;
+      background: #FFFFFF;
+    }
+    .analysis-donut-center {
+      position: absolute;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1.2;
+      color: #29283A;
+    }
+    .analysis-donut-center strong { font-size: 1.5rem; }
+    .analysis-donut-center span { font-size: 0.75rem; color: #5F5D70; }
+    @media (max-width: 360px) {
+      .analysis-chart { gap: 0.2rem; }
+      .analysis-chart-label { font-size: 0.65rem; }
     }
   </style>
 </head>
@@ -36,16 +194,14 @@
         <h1 class="text-2xl font-black text-[#222E2A] mt-0.5 tracking-tight">
           Mi sobre semanal
         </h1>
+        <div id="app-version" class="px-3 py-1 rounded-full bg-[#1B5E4C] text-white text-[11px] font-bold tracking-wide" style="display: inline-block; margin-top: 0.4rem;">
+          VERSIÓN 2.0.0 · PÚBLICA
+        </div>
       </div>
-      <div class="flex gap-2">
-      <button
-        id="btn-check-update"
-        type="button"
-        class="p-2.5 rounded-2xl bg-[#D9D3C3] hover:bg-[#CDC6B4] text-[#222E2A] transition-colors shadow-sm active:scale-95"
-        title="Buscar actualización"
-        aria-label="Buscar actualización"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m14.836 2A7 7 0 005.582 9m0 0H9m11 11v-5h-.581m0 0a7.001 7.001 0 01-14.837-2M15 15h-3"/></svg>
+      <div class="header-actions flex items-center gap-2">
+      <button id="btn-open-currency" type="button" class="rounded-2xl shadow-sm active:scale-95" style="display: flex; align-items: center; gap: 0.3rem; padding: 0.3rem 0.5rem; min-height: 2.75rem;" title="Elegir moneda" aria-label="Moneda actual: euro. Elegir moneda">
+        <img src="./gasto-libre-icon.svg" alt="" width="30" height="30" style="width: 1.9rem; height: 1.9rem; border-radius: 0.45rem;" />
+        <span id="current-currency-code" class="text-xs font-black">EUR</span>
       </button>
       <button 
         id="btn-open-settings"
@@ -144,85 +300,130 @@
       </form>
     </section>
 
-    <!-- CARD 3: GASTOS FIJOS MENSUALES -->
+    <!-- CARD 3: CALENDARIO Y GASTOS DEL DÍA -->
     <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-4">
-      <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
-        GASTOS FIJOS MENSUALES
+      <div class="flex justify-between items-center gap-2">
+        <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
+          CALENDARIO DE GASTOS
+        </div>
+        <button id="btn-calendar-today" type="button" class="px-3 py-1 rounded-full bg-[#EBE5D8] text-[#1B5E4C] text-[11px] font-bold">Hoy</button>
       </div>
 
-      <div id="fixed-expenses-list" class="flex flex-col gap-2.5">
-        <!-- List rendered dynamically -->
+      <div class="flex justify-between items-center">
+        <button id="btn-calendar-prev" type="button" aria-label="Mes anterior" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1;">‹</button>
+        <div id="calendar-month-label" class="text-sm uppercase font-black tracking-wider text-[#222E2A]">—</div>
+        <button id="btn-calendar-next" type="button" aria-label="Mes siguiente" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1;">›</button>
       </div>
+
+      <div class="calendar-grid" aria-hidden="true">
+        <div class="calendar-weekday">L</div><div class="calendar-weekday">M</div><div class="calendar-weekday">X</div>
+        <div class="calendar-weekday">J</div><div class="calendar-weekday">V</div><div class="calendar-weekday">S</div><div class="calendar-weekday">D</div>
+      </div>
+      <div id="calendar-days" class="calendar-grid" role="grid" aria-label="Días del mes"></div>
 
       <hr class="border-t border-dashed border-[#E2DDD0]" />
 
-      <div class="flex justify-between items-center text-sm font-bold text-[#2C3531]">
-        <span>Total fijo al mes</span>
-        <span id="fixed-total">0,00 €</span>
-      </div>
-      <div id="fixed-weekly-equiv" class="text-[11px] text-[#7A827E] font-medium -mt-1.5">
-        Equivale a 0,00 €/semana
+      <div class="flex justify-between items-start gap-3">
+        <div>
+          <div id="selected-day-label" class="text-xs uppercase font-black tracking-wider text-[#222E2A]">—</div>
+          <div id="selected-day-count" class="text-[11px] text-[#7A827E] mt-0.5">—</div>
+        </div>
+        <div id="selected-day-total" class="font-mono font-black text-[#1B5E4C]">0,00 €</div>
       </div>
 
-      <button
-        type="button"
-        id="btn-open-fixed-modal"
-        class="w-full py-3 rounded-2xl border-2 border-[#1B5E4C] text-[#1B5E4C] hover:bg-[#1B5E4C] hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-1.5 mt-1"
-      >
-        + Añadir gasto fijo
-      </button>
+      <div id="calendar-day-expenses" class="flex flex-col gap-2.5"></div>
     </section>
 
-    <!-- CARD 4: RECENT TRANSACTIONS ("HOY") -->
-    <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-3">
-      <div class="flex items-center gap-1.5 text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
-        <span class="text-xs">✂️</span> HOY
+    <!-- CARD 4: HISTORIAL DE GASTOS POR PERÍODO -->
+    <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-4" aria-labelledby="history-heading">
+      <h2 id="history-heading" class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">HISTORIAL DE GASTOS</h2>
+      <div id="history-period-options" class="flex gap-1 rounded-xl bg-[#EBE5D8] p-1" role="group" aria-label="Período del historial">
+        <button type="button" data-history-period="day" aria-pressed="false" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Día</button>
+        <button type="button" data-history-period="week" aria-pressed="false" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Semana</button>
+        <button type="button" data-history-period="month" aria-pressed="true" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Mes</button>
+        <button type="button" data-history-period="all" aria-pressed="false" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Todo</button>
       </div>
+      <div id="history-navigation" class="flex items-center justify-between gap-2">
+        <button id="btn-history-prev" type="button" aria-label="Período anterior" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1; flex-shrink: 0;">‹</button>
+        <div id="history-period-label" class="text-center text-sm font-bold text-[#222E2A] capitalize" aria-live="polite">—</div>
+        <button id="btn-history-next" type="button" aria-label="Período siguiente" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1; flex-shrink: 0;">›</button>
+      </div>
+      <button id="btn-history-today" type="button" class="px-3 py-1 rounded-full bg-[#EBE5D8] text-[#1B5E4C] text-[11px] font-bold" style="align-self: center;">Volver a hoy</button>
+      <div class="flex flex-col gap-2 border-t border-[#E2DDD0] pt-3">
+        <label for="input-history-search" class="text-xs font-bold text-[#525B56]">Buscar por nombre o categoría</label>
+        <input id="input-history-search" type="search" placeholder="Ej.: Mercadona, café…" class="w-full bg-white border border-[#E0DACB] rounded-xl px-3 py-2.5 text-sm text-[#2C3531] focus:outline-none focus:ring-2 focus:ring-[#1B5E4C]" />
+        <div class="flex gap-2">
+          <select id="history-category-filter" aria-label="Filtrar por categoría" class="flex-1 bg-white border border-[#E0DACB] rounded-xl px-3 py-2.5 text-sm text-[#2C3531]" style="min-width: 0;">
+            <option value="">Todas las categorías</option>
+          </select>
+          <button id="btn-history-clear" type="button" class="px-3 py-2.5 rounded-xl bg-[#EBE5D8] text-[#1B5E4C] text-xs font-bold">Limpiar</button>
+        </div>
+        <p id="history-filter-summary" class="text-xs text-[#7A827E]" role="status" aria-live="polite" hidden></p>
+      </div>
+      <div class="flex justify-between items-center gap-3 border-t border-[#E2DDD0] pt-3">
+        <span id="history-expense-count" class="text-xs text-[#7A827E]">0 gastos</span>
+        <strong id="history-period-total" class="font-mono font-black text-[#1B5E4C]">0,00 €</strong>
+      </div>
+      <div id="history-expense-list" class="flex flex-col gap-2" aria-live="polite"></div>
+    </section>
 
-      <div id="recent-expenses-list" class="flex flex-col gap-2.5">
-        <!-- Rendered dynamically -->
+    <!-- CARD 5: ANÁLISIS DE GASTOS -->
+    <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-4" aria-labelledby="analysis-heading">
+      <div>
+        <h2 id="analysis-heading" class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">ANÁLISIS DE GASTOS</h2>
+      </div>
+      <div id="analysis-period-options" class="flex gap-1 rounded-xl bg-[#EBE5D8] p-1" role="group" aria-label="Período del análisis">
+        <button type="button" data-analysis-period="day" aria-pressed="false" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Día</button>
+        <button type="button" data-analysis-period="week" aria-pressed="false" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Semana</button>
+        <button type="button" data-analysis-period="month" aria-pressed="true" class="flex-1 rounded-lg py-2 text-sm font-bold text-[#525B56]">Mes</button>
+      </div>
+      <div class="flex items-center justify-between gap-2">
+        <button id="btn-analysis-prev" type="button" aria-label="Período anterior del análisis" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1; flex-shrink: 0;">‹</button>
+        <div id="analysis-period-label" class="text-center text-sm font-bold text-[#222E2A] capitalize" aria-live="polite">—</div>
+        <button id="btn-analysis-next" type="button" aria-label="Período siguiente del análisis" class="bg-white border border-[#E0DACB] text-[#1B5E4C] font-bold" style="width: 2.25rem; height: 2.25rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; font-size: 1.3rem; line-height: 1; flex-shrink: 0;">›</button>
+      </div>
+      <button id="btn-analysis-today" type="button" class="px-3 py-1 rounded-full bg-[#EBE5D8] text-[#1B5E4C] text-xs font-bold" style="align-self: center;">Volver a hoy</button>
+      <div class="bg-[#EBE5D8] rounded-2xl p-4">
+        <div class="text-sm text-[#525B56] font-semibold">Total gastado</div>
+        <div id="analysis-total" class="text-2xl font-black text-[#1B5E4C] mt-1">0,00 €</div>
+        <div id="analysis-expense-count" class="text-sm text-[#525B56] mt-1">0 gastos</div>
+      </div>
+      <div class="border-t border-[#E2DDD0] pt-3">
+        <h3 id="analysis-chart-heading" class="text-sm font-bold text-[#222E2A]">Cuándo gastaste</h3>
+        <div id="analysis-chart" class="analysis-chart" role="list" aria-label="Gastos distribuidos en el período"></div>
+        <p id="analysis-chart-empty" class="text-sm text-[#7A827E] mt-3" hidden>No hay gastos en este período.</p>
+      </div>
+      <div class="border-t border-[#E2DDD0] pt-3">
+        <h3 class="text-sm font-bold text-[#222E2A]">En qué gastaste</h3>
+        <div id="analysis-donut" class="analysis-donut" role="img" aria-label="Distribución del gasto por categorías">
+          <div class="analysis-donut-center" aria-hidden="true"><strong id="analysis-donut-count">0</strong><span>categorías</span></div>
+        </div>
+        <div id="analysis-categories" class="flex flex-col gap-3 mt-3"></div>
       </div>
     </section>
 
-    <button
-      type="button"
-      id="btn-toggle-all-expenses"
-      class="w-full py-3 rounded-2xl border-2 border-[#1B5E4C] text-[#1B5E4C] hover:bg-[#1B5E4C] hover:text-white font-bold text-sm transition-all"
-    >
-      Ver todos los gastos
-    </button>
-
-    <section id="all-expenses-section" class="hidden bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-3">
-      <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
-        TODOS LOS GASTOS
-      </div>
-      <div id="all-expenses-list" class="flex flex-col gap-2">
-        <!-- Rendered dynamically -->
-      </div>
-    </section>
-
-    <!-- CARD 5: HISTORIAL DE MESES -->
-    <section class="bg-[#FAF7F0] rounded-3xl p-6 shadow-sm border border-[#E2DDD0] flex flex-col gap-3">
-      <div class="text-[11px] uppercase font-bold text-[#7A827E] tracking-wider">
-        HISTORIAL DE MESES
-      </div>
-
-      <div id="monthly-history-list" class="flex flex-col gap-2">
-        <!-- Rendered dynamically -->
-      </div>
-    </section>
-
-    <!-- FOOTER EXPORT ACTION -->
+    <!-- FOOTER BACKUP ACTIONS -->
     <footer class="flex flex-col items-center gap-2 pt-2 pb-6">
+      <div class="w-full p-4 rounded-2xl bg-[#FAF7F0] border border-[#D9D3C3] text-xs text-[#525B56]">
+        <strong class="text-[#222E2A]">Tus copias de seguridad</strong>
+        <p class="mt-1">Tus gastos solo están en este navegador. Para protegerlos fuera del teléfono, descarga una copia JSON y comprueba el archivo guardado.</p>
+        <p id="backup-verified-status" class="mt-1 font-semibold" role="status">Aún no has comprobado un archivo de copia.</p>
+      </div>
       <button
         id="btn-export"
         class="w-full py-3.5 rounded-2xl bg-white hover:bg-[#FAF7F0] border border-[#D9D3C3] text-[#1B5E4C] font-bold text-sm shadow-sm transition-all flex items-center justify-center gap-2 active:scale-95"
       >
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-        Descargar copia de mis gastos
+        Guardar copia JSON ahora
       </button>
-      <span class="text-[11px] text-[#858C88] font-medium">
-        Todo se guarda en este dispositivo.
+      <label class="w-full py-3 rounded-2xl bg-[#FAF7F0] border border-[#D9D3C3] text-[#1B5E4C] font-bold text-sm text-center cursor-pointer">
+        Comprobar archivo guardado
+        <input id="input-check-backup-file" type="file" accept=".json,application/json" class="hidden" />
+      </label>
+      <button id="btn-restore-json" type="button" class="w-full py-3 rounded-2xl bg-[#FAF7F0] border border-[#D9D3C3] text-[#2C3531] font-bold text-sm">Restaurar desde un archivo JSON</button>
+      <p id="backup-check-result" class="w-full text-xs text-[#525B56] text-center" role="status" aria-live="polite">La app no puede confirmar una descarga hasta que selecciones el archivo guardado.</p>
+      <span id="save-status" class="text-[11px] text-[#858C88] font-medium" role="status" aria-live="polite">
+        Comprobando el estado de los datos…
       </span>
     </footer>
 
@@ -231,7 +432,7 @@
 
 <!-- MODAL: SETTINGS -->
 <div id="modal-settings" class="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
-  <div class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4">
+  <div class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4" style="max-height: 90vh; overflow-y: auto;">
     <div class="flex justify-between items-center">
       <h2 class="text-lg font-bold text-[#222E2A]">Ajustes de Presupuesto</h2>
       <button id="btn-close-settings" class="text-[#8B938F] hover:text-black">
@@ -241,7 +442,7 @@
 
     <div>
       <label class="text-xs font-bold text-[#7A827E] uppercase tracking-wider block mb-1">
-        Límite Semanal (€)
+        Límite semanal (<span id="limit-currency-code">EUR</span>)
       </label>
       <input
         id="input-limit"
@@ -251,22 +452,43 @@
       />
     </div>
 
-    <label class="flex items-center gap-2.5 cursor-pointer select-none">
-      <input id="input-deduct-fixed" type="checkbox" class="w-4 h-4 accent-[#1B5E4C]" />
-      <span class="text-xs font-semibold text-[#2C3531]">Restar gastos fijos (prorrateados) de mi sobre semanal</span>
-    </label>
+    <hr class="border-t border-[#E2DDD0]" />
+
+    <button id="btn-check-update" type="button" class="w-full py-2.5 rounded-xl border border-[#D9D3C3] bg-white text-[#2C3531] font-semibold text-sm">
+      Buscar actualización
+    </button>
 
     <hr class="border-t border-[#E2DDD0]" />
 
     <div>
       <label class="text-xs font-bold text-[#7A827E] uppercase tracking-wider block mb-2">
-        Restaurar / Importar Copia
+        Seguridad de los datos
       </label>
+      <div id="save-status-details" class="text-xs text-[#525B56] bg-[#EBE5D8] rounded-xl px-3 py-2 mb-2">
+        Preparando protección local…
+      </div>
       <label class="w-full py-2.5 rounded-xl border border-[#D9D3C3] bg-white hover:bg-[#F3EFE6] text-[#2C3531] font-semibold text-xs flex items-center justify-center gap-2 cursor-pointer transition-colors">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
-        Importar archivo JSON
-        <input id="input-import-file" type="file" accept=".json" class="hidden" />
+        Elegir copia JSON para restaurar
+        <input id="input-import-file" type="file" accept=".json,application/json" class="hidden" />
       </label>
+      <button id="btn-restore-local" type="button" class="w-full mt-2 py-2.5 rounded-xl border border-[#D9D3C3] bg-white hover:bg-[#F3EFE6] text-[#2C3531] font-semibold text-xs">
+        Restaurar última copia local
+      </button>
+    </div>
+
+    <hr class="border-t border-[#E2DDD0]" />
+
+    <div>
+      <div class="text-xs font-bold text-[#7A827E] uppercase tracking-wider mb-2">
+        Restablecer secciones
+      </div>
+      <p class="text-[11px] text-[#7A827E] mb-2">Para borrar, primero descarga una copia y comprueba que el archivo está guardado.</p>
+      <div class="flex flex-col gap-2">
+        <button id="btn-reset-week" type="button" class="w-full py-2.5 rounded-xl border border-[#D9D3C3] bg-white text-[#525B56] font-semibold text-xs">Borrar gastos de esta semana</button>
+        <button id="btn-reset-history" type="button" class="w-full py-2.5 rounded-xl border border-[#D9D3C3] bg-white text-[#525B56] font-semibold text-xs">Borrar todo el historial de gastos</button>
+        <button id="btn-reset-all" type="button" class="w-full py-2.5 rounded-xl border border-red-500 bg-white text-red-600 font-bold text-xs">Restablecer toda la aplicación</button>
+      </div>
     </div>
 
     <div class="flex gap-2 pt-2">
@@ -286,59 +508,68 @@
   </div>
 </div>
 
-<!-- MODAL: ADD FIXED EXPENSE -->
-<div id="modal-fixed" class="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 z-50 hidden">
-  <form id="fixed-form" class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4">
-    <div class="flex justify-between items-center">
-      <h2 class="text-lg font-bold text-[#222E2A]">Nuevo Gasto Fijo</h2>
-      <button type="button" id="btn-close-fixed" class="text-[#8B938F] hover:text-black">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-
-    <div>
-      <label class="text-xs font-bold text-[#7A827E] uppercase tracking-wider block mb-1">
-        Nombre del Gasto Fijo
+<!-- MODAL: MONEDA DEL DISPOSITIVO -->
+<div id="modal-currency" class="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="currency-heading">
+  <div class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4" style="max-height: 90vh; overflow-y: auto;">
+    <h2 id="currency-heading" class="text-lg font-bold text-[#222E2A]">Moneda de tus gastos</h2>
+    <p class="text-sm text-[#525B56]">Esta elección se guarda solo en este dispositivo. No convierte importes ni cambia los gastos de otros teléfonos.</p>
+    <fieldset class="flex flex-col gap-2">
+      <legend class="text-sm font-bold text-[#222E2A] mb-2">Elige una moneda</legend>
+      <label class="flex items-center gap-3 bg-white border border-[#E0DACB] rounded-xl px-3 py-3 text-sm font-semibold text-[#222E2A]">
+        <input type="radio" name="selected-currency" value="EUR" class="w-4 h-4 accent-[#1B5E4C]" /> Euro · EUR (€)
       </label>
-      <input
-        id="input-fixed-name"
-        type="text"
-        placeholder="Ej. CAFE BAR, Gimnasio, Netflix"
-        class="w-full bg-white border border-[#E0DACB] rounded-xl px-4 py-2.5 text-sm font-semibold text-[#2C3531] focus:outline-none focus:ring-2 focus:ring-[#1B5E4C]"
-        required
-      />
-    </div>
-
-    <div>
-      <label class="text-xs font-bold text-[#7A827E] uppercase tracking-wider block mb-1">
-        Importe Mensual (€)
+      <label class="flex items-center gap-3 bg-white border border-[#E0DACB] rounded-xl px-3 py-3 text-sm font-semibold text-[#222E2A]">
+        <input type="radio" name="selected-currency" value="USD" class="w-4 h-4 accent-[#1B5E4C]" /> Dólar estadounidense · USD (US$)
       </label>
-      <input
-        id="input-fixed-amount"
-        type="text"
-        inputmode="decimal"
-        placeholder="0,00"
-        class="w-full bg-white border border-[#E0DACB] rounded-xl px-4 py-2.5 text-sm font-bold text-[#1B5E4C] focus:outline-none focus:ring-2 focus:ring-[#1B5E4C]"
-        required
-      />
+      <label class="flex items-center gap-3 bg-white border border-[#E0DACB] rounded-xl px-3 py-3 text-sm font-semibold text-[#222E2A]">
+        <input type="radio" name="selected-currency" value="CLP" class="w-4 h-4 accent-[#1B5E4C]" /> Peso chileno · CLP ($)
+      </label>
+    </fieldset>
+    <p id="currency-change-warning" class="text-sm text-[#525B56] bg-[#EBE5D8] rounded-xl p-3" role="status"></p>
+    <label class="flex items-start gap-2 text-sm text-[#353F3B]">
+      <input id="input-currency-confirm" type="checkbox" class="w-4 h-4 accent-[#1B5E4C]" style="margin-top: 0.2rem; flex-shrink: 0;" />
+      <span>Entiendo que los números guardados no se convierten a otra moneda.</span>
+    </label>
+    <div class="flex gap-2">
+      <button id="btn-currency-cancel" type="button" class="w-1/2 py-2.5 rounded-xl bg-[#EBE5D8] text-[#525B56] font-bold text-sm">Cancelar</button>
+      <button id="btn-currency-save" type="button" class="w-1/2 py-2.5 rounded-xl bg-[#1B5E4C] text-white font-bold text-sm" disabled style="opacity: 0.5;">Cambiar moneda</button>
     </div>
+  </div>
+</div>
 
-    <div class="flex gap-2 pt-2">
-      <button
-        type="button"
-        id="btn-cancel-fixed"
-        class="w-1/2 py-2.5 rounded-xl bg-[#EBE5D8] text-[#525B56] font-bold text-xs"
-      >
-        Cancelar
-      </button>
-      <button
-        type="submit"
-        class="w-1/2 py-2.5 rounded-xl bg-[#1B5E4C] text-white font-bold text-xs shadow-sm"
-      >
-        Añadir
-      </button>
+<!-- MODAL: REVISAR UNA COPIA ANTES DE RESTAURAR -->
+<div id="modal-import-preview" class="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="import-preview-heading">
+  <div class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4" style="max-height: 90vh; overflow-y: auto;">
+    <h2 id="import-preview-heading" class="text-lg font-bold text-[#222E2A]">Revisa la copia</h2>
+    <div id="import-preview-details" class="text-sm text-[#353F3B]" style="overflow-wrap: anywhere;"></div>
+    <p class="text-xs text-red-600 font-semibold">Restaurar reemplazará los gastos, el límite y la moneda actuales de este dispositivo. Antes se conservará una copia local de los datos actuales. No se convierten importes.</p>
+    <div class="flex gap-2">
+      <button id="btn-import-cancel" type="button" class="w-1/2 py-2.5 rounded-xl bg-[#EBE5D8] text-[#525B56] font-bold text-xs">Cancelar</button>
+      <button id="btn-import-confirm" type="button" class="w-1/2 py-2.5 rounded-xl bg-[#1B5E4C] text-white font-bold text-xs">Restaurar copia</button>
     </div>
-  </form>
+  </div>
+</div>
+
+<!-- MODAL: CONFIRMACIÓN SEGURA DE RESTABLECIMIENTO -->
+<div id="modal-reset" class="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="reset-heading">
+  <div class="bg-[#FAF7F0] rounded-3xl max-w-sm w-full p-6 shadow-xl border border-[#E2DDD0] flex flex-col gap-4">
+    <h2 id="reset-heading" class="text-lg font-bold text-[#222E2A]">Antes de borrar</h2>
+    <p id="reset-message" class="text-sm text-[#525B56]"></p>
+    <ol class="text-xs text-[#525B56]" style="list-style: decimal; padding-left: 1.25rem;">
+      <li>Descarga la copia JSON.</li>
+      <li>Comprueba que el archivo aparece en Descargas o donde lo guardaste.</li>
+      <li>Solo entonces confirma el borrado.</li>
+    </ol>
+    <button id="btn-reset-download" type="button" class="w-full py-3 rounded-xl bg-[#1B5E4C] text-white font-bold text-sm">Descargar copia antes de borrar</button>
+    <label class="flex items-start gap-2.5 text-xs text-[#353F3B]">
+      <input id="input-reset-verified" type="checkbox" class="w-4 h-4 accent-[#1B5E4C]" disabled />
+      <span>He comprobado que la copia JSON se guardó correctamente.</span>
+    </label>
+    <div class="flex gap-2">
+      <button id="btn-reset-cancel" type="button" class="w-1/2 py-2.5 rounded-xl bg-[#EBE5D8] text-[#525B56] font-bold text-xs">Cancelar</button>
+      <button id="btn-reset-confirm" type="button" class="w-1/2 py-2.5 rounded-xl border border-red-500 text-red-600 font-bold text-xs" disabled>Borrar sección</button>
+    </div>
+  </div>
 </div>
 
 <!-- MODAL: EDIT EXPENSE -->
@@ -355,7 +586,7 @@
 
     <div>
       <label class="text-xs font-bold text-[#7A827E] uppercase tracking-wider block mb-1">
-        Importe (€)
+        Importe (<span id="edit-currency-code">EUR</span>)
       </label>
       <input
         id="input-edit-amount"
@@ -405,12 +636,11 @@
 <!-- TOAST -->
 <div id="update-notice" class="hidden fixed left-4 right-4 z-50 bg-[#222E2A] text-white rounded-2xl shadow-xl p-4" style="top: max(1rem, env(safe-area-inset-top));">
   <div class="flex items-start gap-3">
-    <svg class="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
     <div class="flex-1">
       <div class="font-bold text-sm">Actualización lista</div>
-      <div class="text-xs mt-1 text-[#E5E0D3]">Cierra y vuelve a abrir la app para ver los cambios. Tus gastos siguen guardados.</div>
+      <div class="text-xs mt-1">Cierra y vuelve a abrir la app para ver los cambios. Tus gastos siguen guardados en este dispositivo.</div>
     </div>
-    <button id="btn-close-update-notice" type="button" class="text-xs font-bold text-emerald-400">Vale</button>
+    <button id="btn-close-update-notice" type="button" class="text-sm font-bold text-emerald-400">Vale</button>
   </div>
 </div>
 
@@ -423,11 +653,11 @@
 <script>
   // Categories Definitions
   const CATEGORIES = [
-    { id: 'comida', name: 'Comida', color: 'bg-amber-600', bgLight: 'bg-amber-100', text: 'text-amber-700' },
-    { id: 'ocio', name: 'Ocio', color: 'bg-indigo-600', bgLight: 'bg-indigo-100', text: 'text-indigo-600' },
-    { id: 'servicios', name: 'Servicios', color: 'bg-emerald-600', bgLight: 'bg-emerald-100', text: 'text-emerald-600' },
-    { id: 'compras', name: 'Compras', color: 'bg-sky-600', bgLight: 'bg-sky-100', text: 'text-sky-600' },
-    { id: 'suscripciones', name: 'Suscripciones', color: 'bg-stone-500', bgLight: 'bg-stone-200', text: 'text-stone-500' }
+    { id: 'comida', name: 'Comida', color: 'bg-amber-600', bgLight: 'bg-amber-100', text: 'text-amber-700', hex: '#E89A26' },
+    { id: 'ocio', name: 'Ocio', color: 'bg-indigo-600', bgLight: 'bg-indigo-100', text: 'text-indigo-600', hex: '#7158D5' },
+    { id: 'servicios', name: 'Servicios', color: 'bg-emerald-600', bgLight: 'bg-emerald-100', text: 'text-emerald-600', hex: '#1C9994' },
+    { id: 'compras', name: 'Compras', color: 'bg-sky-600', bgLight: 'bg-sky-100', text: 'text-sky-600', hex: '#DF4F91' },
+    { id: 'suscripciones', name: 'Suscripciones', color: 'bg-stone-500', bgLight: 'bg-stone-200', text: 'text-stone-500', hex: '#4E78CC' }
   ];
 
   const PRESET_TAGS = {
@@ -438,17 +668,37 @@
     suscripciones: ['Prime Video', 'ChatGPT', 'iCloud', 'FaceApp', 'Netflix', 'Otros']
   };
 
-  // Application State. Si existen datos de la versión anterior, se migran una sola vez.
+  const CURRENCIES = {
+    EUR: { name: 'euro', label: 'Euro (EUR)' },
+    USD: { name: 'dólar estadounidense', label: 'Dólar estadounidense (USD)' },
+    CLP: { name: 'peso chileno', label: 'Peso chileno (CLP)' }
+  };
+
+  // Application State. Formato consolidado y versionado, con compatibilidad hacia atrás.
+  const APP_VERSION = '2.0.0';
+  const APP_CHANNEL = 'PÚBLICA';
+  const APP_DATA_VERSION = 4;
+  const APP_STORAGE_KEY = 'gasto-libre-state-v3';
+  const LOCAL_BACKUP_KEY = 'gasto-libre-local-backups-v3';
+  const SAVE_META_KEY = 'gasto-libre-save-meta-v3';
+  const VERIFIED_BACKUP_KEY = 'gasto-libre-verified-backup-v3';
+  const LOCAL_BACKUP_LIMIT = 10;
+  let storageReadWarning = false;
+
   function readJSON(key, fallback) {
     try {
       const value = localStorage.getItem(key);
       return value === null ? fallback : JSON.parse(value);
     } catch (error) {
+      storageReadWarning = true;
       return fallback;
     }
   }
 
-  const hasCurrentData = localStorage.getItem('envelope_weekly_limit') !== null
+  const storedState = readJSON(APP_STORAGE_KEY, null);
+  const hasConsolidatedState = storedState && typeof storedState === 'object';
+  const hasCurrentData = hasConsolidatedState
+    || localStorage.getItem('envelope_weekly_limit') !== null
     || localStorage.getItem('envelope_expenses') !== null
     || localStorage.getItem('envelope_fixed_expenses') !== null;
   const legacyState = hasCurrentData ? null : readJSON('gasto-libre-movil-v1', null);
@@ -460,12 +710,12 @@
     otros: 'servicios'
   };
 
-  let weeklyLimit = Number(localStorage.getItem('envelope_weekly_limit'));
+  let weeklyLimit = Number(storedState?.weeklyLimit ?? localStorage.getItem('envelope_weekly_limit'));
   if (!Number.isFinite(weeklyLimit) || weeklyLimit <= 0) {
     weeklyLimit = Number(legacyState?.limit ?? legacyState?.weeklyBudget) || 100;
   }
 
-  let expenses = readJSON('envelope_expenses', null);
+  let expenses = Array.isArray(storedState?.expenses) ? storedState.expenses : readJSON('envelope_expenses', null);
   if (!Array.isArray(expenses)) {
     expenses = Array.isArray(legacyState?.expenses) ? legacyState.expenses.map((item, index) => ({
       id: String(item.id ?? `legacy-${index}`),
@@ -476,7 +726,7 @@
     })).filter(item => item.amount > 0) : [];
   }
 
-  let fixedExpenses = readJSON('envelope_fixed_expenses', null);
+  let fixedExpenses = Array.isArray(storedState?.fixedExpenses) ? storedState.fixedExpenses : readJSON('envelope_fixed_expenses', null);
   if (!Array.isArray(fixedExpenses)) {
     const legacyFixed = legacyState?.fixedExpenses ?? legacyState?.fixed;
     fixedExpenses = Array.isArray(legacyFixed) ? legacyFixed.map((item, index) => ({
@@ -486,20 +736,36 @@
     })).filter(item => item.amount > 0) : [];
   }
 
-  let deductFixedFromWeekly = localStorage.getItem('envelope_deduct_fixed') === 'true';
-  if (!hasCurrentData && legacyState) {
-    localStorage.setItem('envelope_weekly_limit', weeklyLimit.toString());
-    localStorage.setItem('envelope_expenses', JSON.stringify(expenses));
-    localStorage.setItem('envelope_fixed_expenses', JSON.stringify(fixedExpenses));
-  }
+  let deductFixedFromWeekly = typeof storedState?.deductFixedFromWeekly === 'boolean'
+    ? storedState.deductFixedFromWeekly
+    : localStorage.getItem('envelope_deduct_fixed') === 'true';
+  let currentCurrency = CURRENCIES[storedState?.currency] ? storedState.currency : 'EUR';
 
   let selectedCategory = 'comida';
   let selectedTag = '';
   let editSelectedCategory = 'comida';
+  let calendarCursor = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
+  let selectedCalendarDate = toDateKey(new Date());
+  let historyPeriod = 'month';
+  let historyCursorDate = toDateKey(new Date());
+  let historySearch = '';
+  let historyCategory = '';
+  let analysisPeriod = 'month';
+  let analysisCursorDate = toDateKey(new Date());
 
   // Helpers
-  function formatEUR(val) {
-    return new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(val) + ' €';
+  function formatMoney(val, code = currentCurrency) {
+    const currency = CURRENCIES[code] ? code : 'EUR';
+    const amount = Number(val);
+    const decimals = currency === 'CLP' && Number.isInteger(amount) ? 0 : 2;
+    const number = new Intl.NumberFormat(currency === 'CLP' ? 'es-CL' : 'es-ES', {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    }).format(Math.abs(amount));
+    const sign = amount < 0 ? '-' : '';
+    if (currency === 'CLP') return `${sign}$${number}`;
+    if (currency === 'USD') return `${sign}US$ ${number}`;
+    return `${sign}${number} €`;
   }
 
   function escapeHTML(value) {
@@ -508,15 +774,29 @@
     return div.innerHTML;
   }
 
-  // Parsea un importe admitiendo tanto "1234,56" como "1.234,56" o "1234.56"
+  function escapeAttribute(value) {
+    return escapeHTML(value).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
+  // Acepta decimales con coma o punto y puntos de miles; CLP nuevos solo en pesos enteros.
   function parseAmount(raw) {
-    let s = (raw || '').trim();
-    if (s.includes('.') && s.includes(',')) {
-      s = s.replace(/\./g, '').replace(',', '.');
-    } else if (s.includes(',')) {
-      s = s.replace(',', '.');
+    let s = String(raw || '').trim().replace(/\s/g, '');
+    if (!/^\d[\d.,]*$/.test(s)) return NaN;
+    if (s.includes(',')) {
+      if ((s.match(/,/g) || []).length !== 1) return NaN;
+      const [whole, fraction] = s.split(',');
+      if (!/^\d{1,2}$/.test(fraction)) return NaN;
+      if (whole.includes('.') && !/^\d{1,3}(\.\d{3})+$/.test(whole)) return NaN;
+      s = `${whole.replace(/\./g, '')}.${fraction}`;
+    } else if (s.includes('.')) {
+      if (/^\d{1,3}(\.\d{3})+$/.test(s)) {
+        s = s.replace(/\./g, '');
+      } else if (!/^\d+\.\d{1,2}$/.test(s)) {
+        return NaN;
+      }
     }
-    return parseFloat(s);
+    const amount = Number(s);
+    return currentCurrency === 'CLP' && !Number.isInteger(amount) ? NaN : amount;
   }
 
   // Devuelve el lunes (00:00) de la semana a la que pertenece la fecha dada
@@ -542,6 +822,22 @@
     return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
   }
 
+  function toDateKey(date) {
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
+  function fromDateKey(key) {
+    const [year, month, day] = key.split('-').map(Number);
+    return new Date(year, month - 1, day, 12, 0, 0);
+  }
+
+  function normalizeSearchText(value) {
+    return String(value ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es-ES').trim();
+  }
+
   function showToast(msg) {
     const toast = document.getElementById('toast');
     const toastMsg = document.getElementById('toast-message');
@@ -554,12 +850,501 @@
     }, 3000);
   }
 
-  function saveState() {
+  function getCurrentState() {
+    return {
+      version: APP_DATA_VERSION,
+      weeklyLimit,
+      currency: currentCurrency,
+      expenses,
+      fixedExpenses,
+      deductFixedFromWeekly
+    };
+  }
+
+  function normalizeState(source) {
+    if (!source || typeof source !== 'object') throw new Error('Formato no válido');
+    const limit = Number(source.weeklyLimit ?? source.limit);
+    if (!Number.isFinite(limit) || limit <= 0) throw new Error('Límite semanal no válido');
+    const currency = source.currency == null ? 'EUR' : source.currency;
+    if (!CURRENCIES[currency]) throw new Error('La moneda de la copia no es válida');
+
+    const cleanExpenses = Array.isArray(source.expenses) ? source.expenses.map((item, index) => {
+      const amount = Number(item.amount);
+      const dateValue = item.date || (item.day ? `${item.day}T12:00:00` : null) || item.ts;
+      const parsedDate = new Date(dateValue);
+      if (!Number.isFinite(amount) || amount <= 0 || Number.isNaN(parsedDate.getTime())) return null;
+      return {
+        id: String(item.id ?? `imported-${Date.now()}-${index}`),
+        amount,
+        category: CATEGORIES.some(category => category.id === item.category)
+          ? item.category
+          : legacyCategoryMap[item.category] || 'servicios',
+        name: String(item.name || item.note || 'Gasto').slice(0, 120),
+        date: parsedDate.toISOString()
+      };
+    }).filter(Boolean) : [];
+
+    const importedFixed = source.fixedExpenses ?? source.fixed;
+    const cleanFixed = Array.isArray(importedFixed) ? importedFixed.map((item, index) => {
+      const amount = Number(item.amount);
+      if (!Number.isFinite(amount) || amount <= 0) return null;
+      return {
+        id: String(item.id ?? `imported-fixed-${Date.now()}-${index}`),
+        name: String(item.name || item.note || 'Gasto fijo').slice(0, 120),
+        amount
+      };
+    }).filter(Boolean) : [];
+
+    return {
+      version: APP_DATA_VERSION,
+      weeklyLimit: limit,
+      currency,
+      expenses: cleanExpenses,
+      fixedExpenses: cleanFixed,
+      deductFixedFromWeekly: source.deductFixedFromWeekly === true
+    };
+  }
+
+  function applyState(source) {
+    const clean = normalizeState(source);
+    weeklyLimit = clean.weeklyLimit;
+    currentCurrency = clean.currency;
+    expenses = clean.expenses;
+    fixedExpenses = clean.fixedExpenses;
+    deductFixedFromWeekly = clean.deductFixedFromWeekly;
+  }
+
+  function updateSaveStatus(ok, savedAt = new Date().toISOString(), detail) {
+    const footerStatus = document.getElementById('save-status');
+    const detailStatus = document.getElementById('save-status-details');
+    const time = new Date(savedAt).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+    const shortText = ok ? `Datos guardados · ${time}` : 'No se pudieron guardar los datos';
+    const longText = detail || (ok
+      ? `Guardado local verificado: ${time}. Hay hasta ${LOCAL_BACKUP_LIMIT} copias locales automáticas.`
+      : 'El navegador no permitió guardar. Descarga una copia JSON antes de cerrar la aplicación.');
+    if (footerStatus) {
+      footerStatus.textContent = shortText;
+      footerStatus.classList.toggle('text-red-600', !ok);
+    }
+    if (detailStatus) {
+      detailStatus.textContent = longText;
+      detailStatus.classList.toggle('text-red-600', !ok);
+    }
+  }
+
+  function stateSignature(state) {
+    const text = JSON.stringify(state);
+    let hash = 2166136261;
+    for (let index = 0; index < text.length; index += 1) {
+      hash = Math.imul(hash ^ text.charCodeAt(index), 16777619);
+    }
+    return `${text.length}:${(hash >>> 0).toString(16)}`;
+  }
+
+  function renderBackupStatus() {
+    const status = document.getElementById('backup-verified-status');
+    const verified = readJSON(VERIFIED_BACKUP_KEY, null);
+    if (!verified || !verified.checkedAt || !verified.signature) {
+      status.textContent = 'Aún no has comprobado un archivo de copia.';
+      return;
+    }
+    const checkedAt = new Date(verified.checkedAt);
+    if (Number.isNaN(checkedAt.getTime())) {
+      status.textContent = 'No se conoce la fecha de la última comprobación.';
+      return;
+    }
+    const dateLabel = checkedAt.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+    status.textContent = verified.signature === stateSignature(getCurrentState())
+      ? `Archivo comprobado el ${dateLabel} para los datos actuales. Conserva ese archivo fuera del teléfono.`
+      : `Los datos cambiaron desde la copia comprobada el ${dateLabel}. Descarga y comprueba una nueva.`;
+  }
+
+  function validateBackupFileData(source) {
+    if (!source || typeof source !== 'object' || Array.isArray(source) || !Array.isArray(source.expenses)) {
+      throw new Error('El archivo no tiene el formato de copia de Gasto Libre');
+    }
+    if (Number(source.version) > APP_DATA_VERSION) {
+      throw new Error('Esta copia es de una versión de datos más reciente');
+    }
+    const rawFixed = source.fixedExpenses ?? source.fixed;
+    if (rawFixed != null && !Array.isArray(rawFixed)) {
+      throw new Error('La lista de gastos antiguos de la copia no es válida');
+    }
+    const clean = normalizeState(source);
+    if (clean.expenses.length !== source.expenses.length || (rawFixed && clean.fixedExpenses.length !== rawFixed.length)) {
+      throw new Error('La copia contiene gastos dañados; no se modificó nada');
+    }
+    return clean;
+  }
+
+  function readBackupFile(file) {
+    if (!file || file.size === 0 || file.size > 10 * 1024 * 1024) {
+      return Promise.reject(new Error('El archivo está vacío o supera 10 MB'));
+    }
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error('No se pudo leer el archivo'));
+      reader.onload = () => {
+        try {
+          const source = JSON.parse(reader.result);
+          resolve({ source, clean: validateBackupFileData(source) });
+        } catch (error) {
+          reject(error instanceof SyntaxError ? new Error('El archivo no contiene un JSON válido') : error);
+        }
+      };
+      reader.readAsText(file);
+    });
+  }
+
+  function storeLocalSnapshot(reason) {
+    const state = getCurrentState();
+    const backups = readJSON(LOCAL_BACKUP_KEY, []);
+    const safeBackups = Array.isArray(backups) ? backups : [];
+    const fingerprint = JSON.stringify(state);
+    if (safeBackups[0]?.fingerprint === fingerprint) return;
+    safeBackups.unshift({
+      id: `${Date.now()}-${Math.random().toString(16).slice(2)}`,
+      createdAt: new Date().toISOString(),
+      reason,
+      fingerprint,
+      data: state
+    });
+    localStorage.setItem(LOCAL_BACKUP_KEY, JSON.stringify(safeBackups.slice(0, LOCAL_BACKUP_LIMIT)));
+  }
+
+  function writeCurrentState() {
+    const state = getCurrentState();
+    const savedAt = new Date().toISOString();
+    localStorage.setItem(APP_STORAGE_KEY, JSON.stringify(state));
+    // Estas claves se mantienen para que una versión anterior pueda seguir leyendo los datos.
     localStorage.setItem('envelope_weekly_limit', weeklyLimit.toString());
     localStorage.setItem('envelope_expenses', JSON.stringify(expenses));
     localStorage.setItem('envelope_fixed_expenses', JSON.stringify(fixedExpenses));
     localStorage.setItem('envelope_deduct_fixed', deductFixedFromWeekly.toString());
-    render();
+    localStorage.setItem(SAVE_META_KEY, JSON.stringify({ version: APP_DATA_VERSION, savedAt }));
+    return savedAt;
+  }
+
+  function saveState(reason = 'cambio') {
+    try {
+      const savedAt = writeCurrentState();
+      storeLocalSnapshot(reason);
+      updateSaveStatus(true, savedAt);
+      render();
+      return true;
+    } catch (error) {
+      updateSaveStatus(false);
+      showToast('No se pudieron guardar los datos');
+      return false;
+    }
+  }
+
+  function renderCalendar(now) {
+    const year = calendarCursor.getFullYear();
+    const month = calendarCursor.getMonth();
+    const firstDay = new Date(year, month, 1);
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const leadingEmptyDays = (firstDay.getDay() + 6) % 7;
+    const todayKey = toDateKey(now);
+    const monthTotals = {};
+
+    expenses.forEach(expense => {
+      const date = new Date(expense.date);
+      if (date.getFullYear() === year && date.getMonth() === month) {
+        const key = toDateKey(date);
+        monthTotals[key] = (monthTotals[key] || 0) + expense.amount;
+      }
+    });
+
+    document.getElementById('calendar-month-label').textContent = firstDay.toLocaleDateString('es-ES', {
+      month: 'long',
+      year: 'numeric'
+    });
+
+    const daysContainer = document.getElementById('calendar-days');
+    daysContainer.innerHTML = '';
+    for (let empty = 0; empty < leadingEmptyDays; empty += 1) {
+      daysContainer.insertAdjacentHTML('beforeend', '<div aria-hidden="true"></div>');
+    }
+
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      const date = new Date(year, month, day, 12, 0, 0);
+      const key = toDateKey(date);
+      const total = monthTotals[key] || 0;
+      const classes = [
+        'calendar-day',
+        total > 0 ? 'has-expenses' : '',
+        key === todayKey ? 'is-today' : '',
+        key === selectedCalendarDate ? 'is-selected' : ''
+      ].filter(Boolean).join(' ');
+      const totalText = total > 0 ? `<span class="calendar-day-total">${formatMoney(total)}</span><span class="calendar-expense-dot"></span>` : '';
+      daysContainer.insertAdjacentHTML('beforeend', `
+        <button type="button" role="gridcell" class="${classes}" data-calendar-date="${key}"
+          aria-label="${day} de ${firstDay.toLocaleDateString('es-ES', { month: 'long' })}${total > 0 ? `, ${formatMoney(total)} gastados` : ', sin gastos'}">
+          <strong>${day}</strong>${totalText}
+        </button>
+      `);
+    }
+
+    const selectedDate = fromDateKey(selectedCalendarDate);
+    const dayExpenses = expenses
+      .filter(expense => toDateKey(new Date(expense.date)) === selectedCalendarDate)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    const dayTotal = dayExpenses.reduce((sum, expense) => sum + expense.amount, 0);
+    const dayLabel = selectedDate.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' });
+    document.getElementById('selected-day-label').textContent = selectedCalendarDate === todayKey ? `HOY · ${dayLabel}` : dayLabel;
+    document.getElementById('selected-day-count').textContent = dayExpenses.length === 1
+      ? '1 gasto registrado'
+      : `${dayExpenses.length} gastos registrados`;
+    document.getElementById('selected-day-total').textContent = formatMoney(dayTotal);
+
+    const dayList = document.getElementById('calendar-day-expenses');
+    if (dayExpenses.length === 0) {
+      dayList.innerHTML = '<div class="text-center py-4 text-xs text-[#8B938F]">No hay gastos registrados en este día.</div>';
+      return;
+    }
+
+    dayList.innerHTML = dayExpenses.map(expense => {
+      const category = CATEGORIES.find(item => item.id === expense.category) || CATEGORIES[4];
+      const safeId = escapeAttribute(expense.id);
+      return `
+        <div class="flex justify-between items-center text-sm py-2 border-b border-[#EBE5D8] last:border-0">
+          <div class="flex items-center gap-2.5">
+            <div class="p-1.5 rounded-lg ${category.bgLight} ${category.text} text-xs font-bold">${category.name[0]}</div>
+            <div>
+              <div class="font-semibold text-[#353F3B]">${escapeHTML(expense.name)}</div>
+              <div class="text-[11px] text-[#8B938F]">${category.name}</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="font-mono font-bold text-[#2C3531]">${formatMoney(expense.amount)}</span>
+            <button type="button" data-edit-expense="${safeId}" aria-label="Editar ${escapeAttribute(expense.name)}" class="text-[#9CA3A0] hover:text-[#1B5E4C] p-1">✎</button>
+            <button type="button" data-delete-expense="${safeId}" aria-label="Eliminar ${escapeAttribute(expense.name)}" class="text-[#9CA3A0] hover:text-red-500 p-1">×</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function renderHistory(now) {
+    const anchor = fromDateKey(historyCursorDate);
+    let start;
+    let end;
+    let periodLabel;
+
+    if (historyPeriod === 'day') {
+      start = new Date(anchor.getFullYear(), anchor.getMonth(), anchor.getDate());
+      end = new Date(anchor.getFullYear(), anchor.getMonth(), anchor.getDate() + 1);
+      periodLabel = anchor.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    } else if (historyPeriod === 'week') {
+      start = getWeekStart(anchor);
+      end = new Date(start.getFullYear(), start.getMonth(), start.getDate() + 7);
+      const lastDay = new Date(start.getFullYear(), start.getMonth(), start.getDate() + 6);
+      periodLabel = `${start.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })} – ${lastDay.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+    } else if (historyPeriod === 'month') {
+      start = new Date(anchor.getFullYear(), anchor.getMonth(), 1);
+      end = new Date(anchor.getFullYear(), anchor.getMonth() + 1, 1);
+      periodLabel = start.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+    } else {
+      periodLabel = 'Todo el historial';
+    }
+
+    const periodExpenses = expenses
+      .filter(expense => {
+        const date = new Date(expense.date);
+        return Number.isFinite(date.getTime()) && (historyPeriod === 'all' || (date >= start && date < end));
+      })
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    const query = normalizeSearchText(historySearch);
+    const filteredExpenses = periodExpenses.filter(expense => {
+      if (historyCategory && expense.category !== historyCategory) return false;
+      if (!query) return true;
+      const categoryName = CATEGORIES.find(item => item.id === expense.category)?.name || '';
+      return normalizeSearchText(`${expense.name} ${categoryName}`).includes(query);
+    });
+    const total = filteredExpenses.reduce((sum, expense) => sum + expense.amount, 0);
+
+    document.querySelectorAll('[data-history-period]').forEach(button => {
+      const selected = button.dataset.historyPeriod === historyPeriod;
+      button.setAttribute('aria-pressed', String(selected));
+      button.classList.toggle('bg-white', selected);
+      button.classList.toggle('text-[#1B5E4C]', selected);
+      button.classList.toggle('shadow-sm', selected);
+      button.classList.toggle('text-[#525B56]', !selected);
+    });
+    document.getElementById('history-period-label').textContent = periodLabel;
+    document.getElementById('history-navigation').classList.toggle('hidden', historyPeriod === 'all');
+    document.getElementById('history-expense-count').textContent = `${filteredExpenses.length} ${filteredExpenses.length === 1 ? 'gasto' : 'gastos'}`;
+    document.getElementById('history-period-total').textContent = formatMoney(total);
+    document.getElementById('btn-history-today').hidden = historyPeriod === 'all' || (now >= start && now < end);
+    const filterSummary = document.getElementById('history-filter-summary');
+    filterSummary.hidden = !query && !historyCategory;
+    filterSummary.textContent = `Mostrando ${filteredExpenses.length} de ${periodExpenses.length} gastos ${historyPeriod === 'all' ? 'de todo el historial' : 'de este período'}. El total corresponde solo a los resultados.`;
+
+    const list = document.getElementById('history-expense-list');
+    if (filteredExpenses.length === 0) {
+      list.innerHTML = periodExpenses.length === 0
+        ? '<div class="text-center py-4 text-xs text-[#8B938F]">No hay gastos registrados en este período.</div>'
+        : '<div class="text-center py-4 text-xs text-[#8B938F]">No hay gastos que coincidan con la búsqueda o el filtro.</div>';
+      return;
+    }
+
+    list.innerHTML = filteredExpenses.map(expense => {
+      const category = CATEGORIES.find(item => item.id === expense.category) || CATEGORIES[4];
+      const date = new Date(expense.date);
+      const dateLabel = date.toLocaleDateString('es-ES', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+      const safeId = escapeAttribute(expense.id);
+      return `
+        <div class="flex justify-between items-start gap-2 text-sm py-2 border-b border-[#EBE5D8] last:border-0">
+          <div class="flex items-center gap-2.5" style="min-width: 0;">
+            <div class="p-1.5 rounded-lg ${category.bgLight} ${category.text} text-xs font-bold">${category.name[0]}</div>
+            <div style="min-width: 0; overflow-wrap: anywhere;">
+              <div class="font-semibold text-[#353F3B]">${escapeHTML(expense.name)}</div>
+              <div class="text-[11px] text-[#8B938F]">${dateLabel} · ${category.name}</div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 shrink-0" style="align-items: flex-end;">
+            <span class="font-mono font-bold text-[#2C3531]">${formatMoney(expense.amount)}</span>
+            <div class="flex items-center gap-1">
+              <button type="button" data-edit-expense="${safeId}" aria-label="Editar ${escapeAttribute(expense.name)}" class="text-[#9CA3A0] hover:text-[#1B5E4C] p-2.5" style="min-width: 2rem; min-height: 2rem;">✎</button>
+              <button type="button" data-delete-expense="${safeId}" aria-label="Eliminar ${escapeAttribute(expense.name)}" class="text-[#9CA3A0] hover:text-red-500 p-2.5" style="min-width: 2rem; min-height: 2rem;">×</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function renderAnalysis(now) {
+    const anchor = fromDateKey(analysisCursorDate);
+    const year = anchor.getFullYear();
+    const month = anchor.getMonth();
+    const day = anchor.getDate();
+    let start;
+    let end;
+    let periodLabel;
+    let buckets;
+
+    if (analysisPeriod === 'day') {
+      start = new Date(year, month, day);
+      end = new Date(year, month, day + 1);
+      periodLabel = anchor.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+      buckets = [0, 6, 12, 18].map(hour => ({
+        start: new Date(year, month, day, hour),
+        end: new Date(year, month, day, hour + 6),
+        label: `${String(hour).padStart(2, '0')}–${String(hour + 5).padStart(2, '0')}`,
+        description: `De ${String(hour).padStart(2, '0')}:00 a ${String(hour + 5).padStart(2, '0')}:59`
+      }));
+    } else if (analysisPeriod === 'week') {
+      start = getWeekStart(anchor);
+      end = new Date(start.getFullYear(), start.getMonth(), start.getDate() + 7);
+      const lastDay = new Date(start.getFullYear(), start.getMonth(), start.getDate() + 6);
+      periodLabel = `${start.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })} – ${lastDay.toLocaleDateString('es-ES', { day: 'numeric', month: 'short', year: 'numeric' })}`;
+      buckets = ['L', 'M', 'X', 'J', 'V', 'S', 'D'].map((label, index) => {
+        const bucketStart = new Date(start.getFullYear(), start.getMonth(), start.getDate() + index);
+        return {
+          start: bucketStart,
+          end: new Date(start.getFullYear(), start.getMonth(), start.getDate() + index + 1),
+          label,
+          description: bucketStart.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' })
+        };
+      });
+    } else {
+      start = new Date(year, month, 1);
+      end = new Date(year, month + 1, 1);
+      periodLabel = start.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+      const lastDay = new Date(year, month + 1, 0).getDate();
+      buckets = [];
+      for (let firstDay = 1; firstDay <= lastDay; firstDay += 7) {
+        const bucketLastDay = Math.min(firstDay + 6, lastDay);
+        buckets.push({
+          start: new Date(year, month, firstDay),
+          end: new Date(year, month, bucketLastDay + 1),
+          label: `${firstDay}–${bucketLastDay}`,
+          description: `Días ${firstDay} al ${bucketLastDay}`
+        });
+      }
+    }
+
+    const periodExpenses = expenses.map(expense => ({ ...expense, parsedDate: new Date(expense.date) }))
+      .filter(expense => Number.isFinite(expense.parsedDate.getTime()) && expense.parsedDate >= start && expense.parsedDate < end);
+    const total = periodExpenses.reduce((sum, expense) => sum + expense.amount, 0);
+    document.querySelectorAll('[data-analysis-period]').forEach(button => {
+      const selected = button.dataset.analysisPeriod === analysisPeriod;
+      button.setAttribute('aria-pressed', String(selected));
+      button.classList.toggle('bg-white', selected);
+      button.classList.toggle('text-[#1B5E4C]', selected);
+      button.classList.toggle('shadow-sm', selected);
+      button.classList.toggle('text-[#525B56]', !selected);
+    });
+    document.getElementById('analysis-period-label').textContent = periodLabel;
+    document.getElementById('btn-analysis-today').hidden = now >= start && now < end;
+    document.getElementById('analysis-total').textContent = formatMoney(total);
+    document.getElementById('analysis-expense-count').textContent = `${periodExpenses.length} ${periodExpenses.length === 1 ? 'gasto' : 'gastos'}`;
+
+    const bucketTotals = buckets.map(bucket => periodExpenses.reduce((sum, expense) =>
+      expense.parsedDate >= bucket.start && expense.parsedDate < bucket.end ? sum + expense.amount : sum, 0));
+    const maxBucketTotal = Math.max(...bucketTotals, 1);
+    const chart = document.getElementById('analysis-chart');
+    chart.style.gridTemplateColumns = `repeat(${buckets.length}, minmax(0, 1fr))`;
+    chart.innerHTML = buckets.map((bucket, index) => {
+      const bucketTotal = bucketTotals[index];
+      const height = bucketTotal > 0 ? bucketTotal / maxBucketTotal * 100 : 0;
+      return `
+        <div class="analysis-chart-column" role="listitem" aria-label="${bucket.description}: ${formatMoney(bucketTotal)}" title="${bucket.description}: ${formatMoney(bucketTotal)}">
+          <div class="analysis-chart-track"><div class="analysis-chart-fill" style="height: ${height}%; ${bucketTotal > 0 ? 'min-height: 3px;' : ''}"></div></div>
+          <div class="analysis-chart-label" aria-hidden="true">${bucket.label}</div>
+        </div>
+      `;
+    }).join('');
+    document.getElementById('analysis-chart-empty').hidden = periodExpenses.length > 0;
+
+    const categories = CATEGORIES.map(category => {
+      const categoryExpenses = periodExpenses.filter(expense => expense.category === category.id);
+      return {
+        ...category,
+        count: categoryExpenses.length,
+        total: categoryExpenses.reduce((sum, expense) => sum + expense.amount, 0)
+      };
+    }).filter(category => category.count > 0).sort((a, b) => b.total - a.total);
+    const donut = document.getElementById('analysis-donut');
+    document.getElementById('analysis-donut-count').textContent = String(categories.length);
+    if (categories.length) {
+      let shareStart = 0;
+      const segments = categories.map(category => {
+        const shareEnd = Math.min(100, shareStart + category.total / total * 100);
+        const segment = `${category.hex} ${shareStart}% ${shareEnd}%`;
+        shareStart = shareEnd;
+        return segment;
+      });
+      donut.style.background = `conic-gradient(${segments.join(', ')})`;
+      donut.setAttribute('aria-label', `Distribución del gasto: ${categories.map(category => `${category.name} ${Math.round(category.total / total * 100)} %`).join(', ')}`);
+    } else {
+      donut.style.background = '#E9E5F4';
+      donut.setAttribute('aria-label', 'Sin gastos por categoría en este período');
+    }
+    document.getElementById('analysis-categories').innerHTML = categories.length
+      ? categories.map(category => {
+          const percentage = total > 0 ? category.total / total * 100 : 0;
+          return `
+            <div class="bg-white rounded-2xl p-3 border border-[#E2DDD0]">
+              <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2" style="min-width: 0;">
+                  <span class="rounded-full ${category.bgLight} ${category.text} font-black" style="width: 2.1rem; height: 2.1rem; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">${category.name[0]}</span>
+                  <div style="min-width: 0;">
+                    <div class="text-sm font-bold text-[#222E2A]">${category.name}</div>
+                    <div class="text-xs text-[#6B726E]">${category.count} ${category.count === 1 ? 'gasto' : 'gastos'} · ${Math.round(percentage)} % del total</div>
+                  </div>
+                </div>
+                <strong class="text-sm font-mono text-[#222E2A]" style="white-space: nowrap;">${formatMoney(category.total)}</strong>
+              </div>
+              <div class="h-2 bg-[#E2DDD0] rounded-full overflow-hidden mt-3" role="meter" aria-label="${category.name}: ${Math.round(percentage)} % del gasto" aria-valuenow="${Math.round(percentage)}" aria-valuemin="0" aria-valuemax="100">
+                <div class="h-full ${category.color} rounded-full" style="width: ${percentage}%"></div>
+              </div>
+            </div>
+          `;
+        }).join('')
+      : '<p class="text-sm text-[#7A827E]">Aún no hay categorías con gastos en este período.</p>';
   }
 
   // Render Functions
@@ -571,18 +1356,27 @@
 
     // Cabecera: semana real
     document.getElementById('week-label').textContent = `GASTO LIBRE · SEMANA ${getISOWeekNumber(now)}`;
+    document.getElementById('app-version').textContent = `VERSIÓN ${APP_VERSION} · ${APP_CHANNEL}`;
+    document.getElementById('current-currency-code').textContent = currentCurrency;
+    document.getElementById('btn-open-currency').setAttribute('aria-label', `Moneda actual: ${CURRENCIES[currentCurrency].name}. Elegir moneda`);
+    document.getElementById('limit-currency-code').textContent = currentCurrency;
+    document.getElementById('edit-currency-code').textContent = currentCurrency;
+    for (const id of ['input-amount', 'input-limit', 'input-edit-amount']) {
+      const input = document.getElementById(id);
+      input.inputMode = currentCurrency === 'CLP' ? 'numeric' : 'decimal';
+      input.placeholder = currentCurrency === 'CLP' ? '0' : '0,00';
+    }
 
     // Gastos de la semana en curso (para el sobre) vs. todos (para el historial)
     const weekExpenses = expenses.filter(e => {
       const d = new Date(e.date);
       return d >= weekStart && d < weekEnd;
     });
-    const todayExpenses = expenses.filter(e => isSameDay(new Date(e.date), now));
 
     // 1. Calculations
-    const totalFixedForCalc = fixedExpenses.reduce((acc, f) => acc + f.amount, 0);
-    const weeklyFixedEquiv = totalFixedForCalc / 4.345; // semanas medias por mes
-    const effectiveLimit = deductFixedFromWeekly ? Math.max(weeklyLimit - weeklyFixedEquiv, 0) : weeklyLimit;
+    // Los gastos fijos quedan conservados en las copias antiguas, pero temporalmente
+    // no se muestran ni intervienen en el cálculo del sobre semanal.
+    const effectiveLimit = weeklyLimit;
 
     const totalSpent = weekExpenses.reduce((acc, c) => acc + c.amount, 0);
     const remaining = effectiveLimit - totalSpent;
@@ -590,12 +1384,10 @@
 
     // Remaining Display
     const remEl = document.getElementById('remaining-amount');
-    remEl.textContent = formatEUR(remaining);
+    remEl.textContent = formatMoney(remaining);
     remEl.className = `text-4xl font-extrabold mt-1 tracking-tight ${remaining < 0 ? 'text-red-600' : 'text-[#1B5E4C]'}`;
 
-    document.getElementById('weekly-limit-sub').textContent = deductFixedFromWeekly
-      ? `de ${formatEUR(effectiveLimit)} esta semana (${formatEUR(weeklyLimit)} − ${formatEUR(weeklyFixedEquiv)} de fijos)`
-      : `de ${formatEUR(effectiveLimit)} esta semana`;
+    document.getElementById('weekly-limit-sub').textContent = `de ${formatMoney(effectiveLimit)} esta semana`;
 
     const progressBar = document.getElementById('progress-bar');
     progressBar.style.width = `${pct}%`;
@@ -625,8 +1417,8 @@
             <div class="flex-1 h-2 bg-[#E2DDD0] rounded-full overflow-hidden">
               <div class="h-full ${cat.color} rounded-full transition-all duration-300" style="width: ${catPct}%"></div>
             </div>
-            <div class="w-16 text-right font-mono font-bold text-[#2C3531]">
-              ${formatEUR(spent)}
+            <div class="text-right font-mono font-bold text-[#2C3531]" style="min-width: 5rem; font-size: 0.75rem; white-space: nowrap;">
+              ${formatMoney(spent)}
             </div>
           </div>
         `;
@@ -678,89 +1470,11 @@
       `;
     });
 
-    // 5. Fixed Expenses List
-    const fixedList = document.getElementById('fixed-expenses-list');
-    fixedList.innerHTML = '';
-    let totalFixed = 0;
-    fixedExpenses.forEach(item => {
-      totalFixed += item.amount;
-      fixedList.innerHTML += `
-        <div class="flex justify-between items-center text-sm py-1 border-b border-[#EBE5D8] last:border-0">
-          <span class="font-bold text-[#353F3B] uppercase tracking-wide text-xs">${escapeHTML(item.name)}</span>
-          <div class="flex items-center gap-2">
-            <span class="font-bold text-[#2C3531]">${formatEUR(item.amount)}</span>
-            <button onclick="deleteFixedExpense('${item.id}')" class="text-[#9CA3A0] hover:text-red-500 p-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-          </div>
-        </div>
-      `;
-    });
-    if (fixedExpenses.length === 0) {
-      fixedList.innerHTML = `<div class="text-xs text-[#8B938F] italic py-1">Sin gastos fijos mensuales</div>`;
-    }
-    document.getElementById('fixed-total').textContent = formatEUR(totalFixed);
-    document.getElementById('fixed-weekly-equiv').textContent = `Equivale a ${formatEUR(totalFixed / 4.345)}/semana`;
+    // 5. Calendario mensual y detalle del día seleccionado
+    renderCalendar(now);
+    renderAnalysis(now);
 
-    // 6. Recent Expenses List ("HOY") — solo los gastos de hoy
-    const recentList = document.getElementById('recent-expenses-list');
-    recentList.innerHTML = '';
-    todayExpenses.forEach(exp => {
-      const catObj = CATEGORIES.find(c => c.id === exp.category) || CATEGORIES[4];
-      recentList.innerHTML += `
-        <div class="flex justify-between items-center text-sm py-2 border-b border-[#EBE5D8] last:border-0">
-          <div class="flex items-center gap-2.5">
-            <div class="p-1.5 rounded-lg ${catObj.bgLight} ${catObj.text} text-xs font-bold">
-              ${catObj.name[0]}
-            </div>
-            <span class="font-semibold text-[#353F3B]">${escapeHTML(exp.name)}</span>
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="font-mono font-bold text-[#2C3531]">${formatEUR(exp.amount)}</span>
-            <button onclick="openEditExpense('${exp.id}')" class="text-[#9CA3A0] hover:text-[#1B5E4C] p-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
-            </button>
-            <button onclick="deleteExpense('${exp.id}')" class="text-[#9CA3A0] hover:text-red-500 p-1">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-            </button>
-          </div>
-        </div>
-      `;
-    });
-    if (todayExpenses.length === 0) {
-      recentList.innerHTML = `<div class="text-center py-4 text-xs text-[#8B938F]">Hoy no hay transacciones registradas.</div>`;
-    }
-
-    // 6a. All expenses, grouped by month
-    const allExpensesList = document.getElementById('all-expenses-list');
-    const allByMonth = {};
-    expenses.forEach(exp => {
-      const d = new Date(exp.date);
-      const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
-      (allByMonth[key] ||= []).push(exp);
-    });
-    allExpensesList.innerHTML = '';
-    Object.keys(allByMonth).sort().reverse().forEach(key => {
-      const monthDate = new Date(`${key}-02T12:00:00`);
-      allExpensesList.innerHTML += `<div class="pt-3 first:pt-0 text-xs uppercase font-bold text-[#1B5E4C] border-t border-dashed border-[#DDD5C4] first:border-t-0">${monthDate.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })}</div>`;
-      allByMonth[key].sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(exp => {
-        const catObj = CATEGORIES.find(c => c.id === exp.category) || CATEGORIES[4];
-        const when = new Date(exp.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
-        allExpensesList.innerHTML += `
-          <div class="flex justify-between items-center text-sm py-2 border-b border-[#EBE5D8] last:border-0">
-            <div class="flex items-center gap-2.5 min-w-0">
-              <div class="p-1.5 rounded-lg ${catObj.bgLight} ${catObj.text} text-xs font-bold">${catObj.name[0]}</div>
-              <span class="font-semibold text-[#353F3B] truncate">${escapeHTML(exp.name)} <span class="font-normal text-xs text-[#8B938F]">· ${when}</span></span>
-            </div>
-            <span class="font-mono font-bold text-[#2C3531] ml-2">${formatEUR(exp.amount)}</span>
-          </div>`;
-      });
-    });
-    if (expenses.length === 0) {
-      allExpensesList.innerHTML = `<div class="text-center py-4 text-xs text-[#8B938F]">Todavía no hay gastos guardados.</div>`;
-    }
-
-    // 6b. Category buttons for the edit modal (mismo estilo que el formulario principal)
+    // 5b. Category buttons for the edit modal (mismo estilo que el formulario principal)
     const editCatContainer = document.getElementById('edit-category-buttons');
     if (editCatContainer) {
       editCatContainer.innerHTML = '';
@@ -782,28 +1496,9 @@
       });
     }
 
-    // 7. Monthly History
-    const monthlyMap = {};
-    expenses.forEach(exp => {
-      const d = new Date(exp.date);
-      const mStr = d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
-      monthlyMap[mStr] = (monthlyMap[mStr] || 0) + exp.amount;
-    });
-
-    const monthlyList = document.getElementById('monthly-history-list');
-    monthlyList.innerHTML = '';
-    const monthEntries = Object.entries(monthlyMap);
-    monthEntries.forEach(([month, amt]) => {
-      monthlyList.innerHTML += `
-        <div class="flex justify-between items-center text-sm py-1.5 border-b border-[#EBE5D8] last:border-0">
-          <span class="capitalize font-semibold text-[#353F3B]">${month}</span>
-          <span class="font-mono font-bold text-[#2C3531]">${formatEUR(amt)}</span>
-        </div>
-      `;
-    });
-    if (monthEntries.length === 0) {
-      monthlyList.innerHTML = `<div class="text-xs text-[#8B938F] italic">Sin historial de meses</div>`;
-    }
+    // 6. Historial navegable por día, semana o mes.
+    renderHistory(now);
+    renderBackupStatus();
   }
 
   // User Actions
@@ -820,8 +1515,9 @@
   }
 
   function deleteExpense(id) {
+    if (!confirm('¿Eliminar este gasto? Podrás recuperarlo desde la última copia local.')) return;
     expenses = expenses.filter(e => e.id !== id);
-    saveState();
+    saveState('eliminar gasto');
     showToast('Gasto eliminado');
   }
 
@@ -841,13 +1537,135 @@
     document.getElementById('modal-edit').classList.remove('hidden');
   }
 
-  function deleteFixedExpense(id) {
-    fixedExpenses = fixedExpenses.filter(f => f.id !== id);
-    saveState();
-    showToast('Gasto fijo eliminado');
+  // Event Listeners
+  document.getElementById('btn-calendar-prev').addEventListener('click', () => {
+    calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() - 1, 1);
+    selectedCalendarDate = toDateKey(calendarCursor);
+    render();
+  });
+
+  document.getElementById('btn-calendar-next').addEventListener('click', () => {
+    calendarCursor = new Date(calendarCursor.getFullYear(), calendarCursor.getMonth() + 1, 1);
+    selectedCalendarDate = toDateKey(calendarCursor);
+    render();
+  });
+
+  document.getElementById('btn-calendar-today').addEventListener('click', () => {
+    const today = new Date();
+    calendarCursor = new Date(today.getFullYear(), today.getMonth(), 1);
+    selectedCalendarDate = toDateKey(today);
+    render();
+  });
+
+  document.getElementById('calendar-days').addEventListener('click', event => {
+    const dayButton = event.target.closest('[data-calendar-date]');
+    if (!dayButton) return;
+    selectedCalendarDate = dayButton.dataset.calendarDate;
+    render();
+  });
+
+  document.getElementById('calendar-day-expenses').addEventListener('click', event => {
+    const editButton = event.target.closest('[data-edit-expense]');
+    const deleteButton = event.target.closest('[data-delete-expense]');
+    if (editButton) openEditExpense(editButton.dataset.editExpense);
+    if (deleteButton) deleteExpense(deleteButton.dataset.deleteExpense);
+  });
+
+  document.getElementById('history-expense-list').addEventListener('click', event => {
+    const editButton = event.target.closest('[data-edit-expense]');
+    const deleteButton = event.target.closest('[data-delete-expense]');
+    if (editButton) openEditExpense(editButton.dataset.editExpense);
+    if (deleteButton) deleteExpense(deleteButton.dataset.deleteExpense);
+  });
+
+  document.getElementById('history-period-options').addEventListener('click', event => {
+    const button = event.target.closest('[data-history-period]');
+    if (!button) return;
+    historyPeriod = button.dataset.historyPeriod;
+    render();
+  });
+
+  const historyCategorySelect = document.getElementById('history-category-filter');
+  CATEGORIES.forEach(category => {
+    const option = document.createElement('option');
+    option.value = category.id;
+    option.textContent = category.name;
+    historyCategorySelect.appendChild(option);
+  });
+
+  document.getElementById('input-history-search').addEventListener('input', event => {
+    historySearch = event.target.value;
+    renderHistory(new Date());
+  });
+  historyCategorySelect.addEventListener('change', event => {
+    historyCategory = event.target.value;
+    renderHistory(new Date());
+  });
+  document.getElementById('btn-history-clear').addEventListener('click', () => {
+    historySearch = '';
+    historyCategory = '';
+    document.getElementById('input-history-search').value = '';
+    historyCategorySelect.value = '';
+    renderHistory(new Date());
+  });
+
+  function moveHistoryPeriod(direction) {
+    if (historyPeriod === 'all') return;
+    const anchor = fromDateKey(historyCursorDate);
+    if (historyPeriod === 'day') {
+      anchor.setDate(anchor.getDate() + direction);
+    } else if (historyPeriod === 'week') {
+      anchor.setDate(anchor.getDate() + direction * 7);
+    } else {
+      const targetMonth = new Date(anchor.getFullYear(), anchor.getMonth() + direction, 1);
+      const lastDay = new Date(targetMonth.getFullYear(), targetMonth.getMonth() + 1, 0).getDate();
+      targetMonth.setDate(Math.min(anchor.getDate(), lastDay));
+      historyCursorDate = toDateKey(targetMonth);
+      render();
+      return;
+    }
+    historyCursorDate = toDateKey(anchor);
+    render();
   }
 
-  // Event Listeners
+  document.getElementById('btn-history-prev').addEventListener('click', () => moveHistoryPeriod(-1));
+  document.getElementById('btn-history-next').addEventListener('click', () => moveHistoryPeriod(1));
+  document.getElementById('btn-history-today').addEventListener('click', () => {
+    historyCursorDate = toDateKey(new Date());
+    render();
+  });
+
+  document.getElementById('analysis-period-options').addEventListener('click', event => {
+    const button = event.target.closest('[data-analysis-period]');
+    if (!button) return;
+    analysisPeriod = button.dataset.analysisPeriod;
+    renderAnalysis(new Date());
+  });
+
+  function moveAnalysisPeriod(direction) {
+    const anchor = fromDateKey(analysisCursorDate);
+    if (analysisPeriod === 'day') {
+      anchor.setDate(anchor.getDate() + direction);
+      analysisCursorDate = toDateKey(anchor);
+    } else if (analysisPeriod === 'week') {
+      anchor.setDate(anchor.getDate() + direction * 7);
+      analysisCursorDate = toDateKey(anchor);
+    } else {
+      const targetMonth = new Date(anchor.getFullYear(), anchor.getMonth() + direction, 1);
+      const lastDay = new Date(targetMonth.getFullYear(), targetMonth.getMonth() + 1, 0).getDate();
+      targetMonth.setDate(Math.min(anchor.getDate(), lastDay));
+      analysisCursorDate = toDateKey(targetMonth);
+    }
+    renderAnalysis(new Date());
+  }
+
+  document.getElementById('btn-analysis-prev').addEventListener('click', () => moveAnalysisPeriod(-1));
+  document.getElementById('btn-analysis-next').addEventListener('click', () => moveAnalysisPeriod(1));
+  document.getElementById('btn-analysis-today').addEventListener('click', () => {
+    analysisCursorDate = toDateKey(new Date());
+    renderAnalysis(new Date());
+  });
+
   document.getElementById('expense-form').addEventListener('submit', (e) => {
     e.preventDefault();
     const amtInput = document.getElementById('input-amount');
@@ -872,7 +1690,7 @@
     amtInput.value = '';
     noteInput.value = '';
     selectedTag = '';
-    saveState();
+    saveState('añadir gasto');
     showToast('Gasto añadido correctamente');
   });
 
@@ -887,7 +1705,6 @@
   const settingsModal = document.getElementById('modal-settings');
   document.getElementById('btn-open-settings').addEventListener('click', () => {
     document.getElementById('input-limit').value = weeklyLimit.toString().replace('.', ',');
-    document.getElementById('input-deduct-fixed').checked = deductFixedFromWeekly;
     settingsModal.classList.remove('hidden');
   });
   document.getElementById('btn-close-settings').addEventListener('click', () => settingsModal.classList.add('hidden'));
@@ -897,85 +1714,266 @@
     const val = parseAmount(document.getElementById('input-limit').value);
     if (!isNaN(val) && val > 0) {
       weeklyLimit = val;
-      deductFixedFromWeekly = document.getElementById('input-deduct-fixed').checked;
       settingsModal.classList.add('hidden');
-      saveState();
+      saveState('actualizar presupuesto');
       showToast('Presupuesto actualizado');
+    } else {
+      showToast(currentCurrency === 'CLP' ? 'Introduce un límite válido en pesos enteros' : 'Introduce un límite válido');
     }
   });
 
-  // Fixed Expense Modal
-  const fixedModal = document.getElementById('modal-fixed');
-  document.getElementById('btn-open-fixed-modal').addEventListener('click', () => {
-    document.getElementById('input-fixed-name').value = '';
-    document.getElementById('input-fixed-amount').value = '';
-    fixedModal.classList.remove('hidden');
+  // La moneda es una preferencia local: cambia la presentación, nunca los importes.
+  const currencyModal = document.getElementById('modal-currency');
+  const currencyConfirm = document.getElementById('input-currency-confirm');
+  const currencySave = document.getElementById('btn-currency-save');
+  let pendingCurrency = currentCurrency;
+
+  function updateCurrencyChoice() {
+    const changed = pendingCurrency !== currentCurrency;
+    const warning = document.getElementById('currency-change-warning');
+    warning.textContent = changed
+      ? `Cambiarás de ${currentCurrency} a ${pendingCurrency}. Los ${expenses.length} gastos y el límite semanal conservarán exactamente sus números; no hay conversión de divisas. Revisa el límite después del cambio.`
+      : `Ya estás usando ${CURRENCIES[currentCurrency].label}.`;
+    currencyConfirm.disabled = !changed;
+    if (!changed) currencyConfirm.checked = false;
+    currencySave.disabled = !changed || !currencyConfirm.checked;
+    currencySave.style.opacity = currencySave.disabled ? '0.5' : '1';
+  }
+
+  document.getElementById('btn-open-currency').addEventListener('click', () => {
+    pendingCurrency = currentCurrency;
+    currencyModal.querySelector(`input[name="selected-currency"][value="${currentCurrency}"]`).checked = true;
+    currencyConfirm.checked = false;
+    updateCurrencyChoice();
+    currencyModal.classList.remove('hidden');
   });
-  document.getElementById('btn-close-fixed').addEventListener('click', () => fixedModal.classList.add('hidden'));
-  document.getElementById('btn-cancel-fixed').addEventListener('click', () => fixedModal.classList.add('hidden'));
-
-  document.getElementById('fixed-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = document.getElementById('input-fixed-name').value.trim();
-    const val = parseAmount(document.getElementById('input-fixed-amount').value);
-
-    if (!name || isNaN(val) || val <= 0) {
-      showToast('Completa los campos correctamente');
-      return;
+  currencyModal.querySelectorAll('input[name="selected-currency"]').forEach(input => {
+    input.addEventListener('change', () => {
+      pendingCurrency = input.value;
+      currencyConfirm.checked = false;
+      updateCurrencyChoice();
+    });
+  });
+  currencyConfirm.addEventListener('change', updateCurrencyChoice);
+  document.getElementById('btn-currency-cancel').addEventListener('click', () => currencyModal.classList.add('hidden'));
+  currencySave.addEventListener('click', () => {
+    if (currencySave.disabled || !CURRENCIES[pendingCurrency]) return;
+    const beforeState = getCurrentState();
+    try {
+      storeLocalSnapshot('antes de cambiar moneda');
+      currentCurrency = pendingCurrency;
+      if (!saveState('cambiar moneda')) throw new Error('No se pudo guardar la moneda');
+      currencyModal.classList.add('hidden');
+      showToast(`Moneda cambiada a ${currentCurrency}. Revisa el límite semanal.`);
+    } catch (error) {
+      applyState(beforeState);
+      try { writeCurrentState(); } catch (writeError) { updateSaveStatus(false); }
+      render();
+      showToast('No se cambió la moneda; tus datos siguen igual');
     }
-
-    fixedExpenses.push({ id: Date.now().toString(), name, amount: val });
-    fixedModal.classList.add('hidden');
-    saveState();
-    showToast('Gasto fijo añadido');
   });
 
-  // Export JSON Backup
-  document.getElementById('btn-export').addEventListener('click', () => {
-    const data = { weeklyLimit, expenses, fixedExpenses, deductFixedFromWeekly, version: 2, exportDate: new Date().toISOString() };
+  function downloadBackup(reason = 'manual') {
+    const data = { ...getCurrentState(), exportDate: new Date().toISOString(), backupReason: reason };
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `copia_gastos_${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `gasto-libre-copia-${new Date().toISOString().replace(/[:.]/g, '-')}.json`;
+    document.body.appendChild(a);
     a.click();
-    URL.revokeObjectURL(url);
-    showToast('Copia descargada');
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    return a.download;
+  }
+
+  // Export JSON Backup
+  document.getElementById('btn-export').addEventListener('click', () => {
+    downloadBackup('copia manual');
+    document.getElementById('backup-check-result').textContent = 'Descarga iniciada. Busca el archivo en Descargas o Archivos y selecciónalo en «Comprobar archivo guardado».';
+    showToast('Descarga iniciada: comprueba el archivo');
   });
 
-  document.getElementById('btn-toggle-all-expenses').addEventListener('click', () => {
-    const section = document.getElementById('all-expenses-section');
-    const isHidden = section.classList.toggle('hidden');
-    document.getElementById('btn-toggle-all-expenses').textContent = isHidden ? 'Ver todos los gastos' : 'Ocultar todos los gastos';
-  });
-
-  // Import JSON Backup
-  document.getElementById('input-import-file').addEventListener('change', (e) => {
-    const file = e.target.files?.[0];
+  // La comprobación lee un archivo seleccionado por la persona: una descarga iniciada no basta.
+  document.getElementById('input-check-backup-file').addEventListener('change', async event => {
+    const file = event.target.files?.[0];
     if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (evt) => {
-      try {
-        const data = JSON.parse(evt.target.result);
-        const confirmado = confirm('Esto reemplazará TODOS tus datos actuales (gastos, fijos y límite) por los de la copia. ¿Continuar?');
-        if (!confirmado) {
-          e.target.value = '';
-          return;
-        }
-        if (Number(data.weeklyLimit) > 0) weeklyLimit = Number(data.weeklyLimit);
-        if (Array.isArray(data.expenses)) expenses = data.expenses;
-        if (Array.isArray(data.fixedExpenses)) fixedExpenses = data.fixedExpenses;
-        if (typeof data.deductFixedFromWeekly === 'boolean') deductFixedFromWeekly = data.deductFixedFromWeekly;
-        saveState();
-        settingsModal.classList.add('hidden');
-        showToast('Datos importados con éxito');
-      } catch (err) {
-        showToast('Error al leer el archivo JSON');
+    const result = document.getElementById('backup-check-result');
+    try {
+      const { clean } = await readBackupFile(file);
+      const matches = JSON.stringify(clean) === JSON.stringify(getCurrentState());
+      if (matches) {
+        localStorage.setItem(VERIFIED_BACKUP_KEY, JSON.stringify({
+          checkedAt: new Date().toISOString(),
+          signature: stateSignature(clean)
+        }));
+        result.textContent = `Archivo válido: ${clean.expenses.length} gastos. Coincide con los datos actuales. Consérvalo fuera del teléfono.`;
+      } else {
+        result.textContent = `Archivo válido: ${clean.expenses.length} gastos, pero es anterior o diferente a los datos actuales. No se importó ni se cambió nada.`;
       }
-      e.target.value = '';
-    };
-    reader.readAsText(file);
+      renderBackupStatus();
+    } catch (error) {
+      result.textContent = `${error.message}. No se modificó ningún dato.`;
+    }
+    event.target.value = '';
+  });
+
+  const importPreviewModal = document.getElementById('modal-import-preview');
+  let pendingImport = null;
+
+  function closeImportPreview() {
+    importPreviewModal.classList.add('hidden');
+    pendingImport = null;
+  }
+
+  document.getElementById('btn-restore-json').addEventListener('click', () => {
+    document.getElementById('input-import-file').click();
+  });
+
+  document.getElementById('input-import-file').addEventListener('change', async event => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    try {
+      const { source, clean } = await readBackupFile(file);
+      const exported = new Date(source.exportDate);
+      const exportedLabel = Number.isNaN(exported.getTime())
+        ? 'No indicada (copia antigua)'
+        : exported.toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+      pendingImport = { clean };
+      const details = document.getElementById('import-preview-details');
+      details.style.whiteSpace = 'pre-line';
+      const currencyWarning = clean.currency !== currentCurrency
+        ? `\nATENCIÓN: al restaurar se usará ${clean.currency} en este dispositivo. Los importes no se convierten.`
+        : '';
+      details.textContent = `Archivo: ${file.name}\nFecha de la copia: ${exportedLabel}\nMoneda de la copia: ${CURRENCIES[clean.currency].label}\nMoneda actual: ${CURRENCIES[currentCurrency].label}\nGastos en la copia: ${clean.expenses.length}\nLímite semanal en la copia: ${formatMoney(clean.weeklyLimit, clean.currency)}\nGastos actuales: ${expenses.length}${currencyWarning}`;
+      settingsModal.classList.add('hidden');
+      importPreviewModal.classList.remove('hidden');
+    } catch (error) {
+      showToast(error.message);
+    }
+    event.target.value = '';
+  });
+
+  document.getElementById('btn-import-cancel').addEventListener('click', closeImportPreview);
+  document.getElementById('btn-import-confirm').addEventListener('click', () => {
+    if (!pendingImport) return;
+    const beforeState = getCurrentState();
+    try {
+      storeLocalSnapshot('antes de importar');
+      applyState(pendingImport.clean);
+      if (!saveState('importación')) throw new Error('No se pudieron guardar los datos importados');
+      closeImportPreview();
+      showToast('Copia restaurada correctamente');
+    } catch (error) {
+      applyState(beforeState);
+      try { writeCurrentState(); } catch (writeError) { updateSaveStatus(false); }
+      render();
+      showToast('No se pudo restaurar la copia; se conservaron los datos anteriores');
+    }
+  });
+
+  document.getElementById('btn-restore-local').addEventListener('click', () => {
+    const backups = readJSON(LOCAL_BACKUP_KEY, []);
+    const currentFingerprint = JSON.stringify(getCurrentState());
+    const backup = Array.isArray(backups) ? backups.find(item => item?.data && item.fingerprint !== currentFingerprint) : null;
+    if (!backup) {
+      showToast('No hay una copia local anterior para restaurar');
+      return;
+    }
+    const date = new Date(backup.createdAt).toLocaleString('es-ES', { dateStyle: 'short', timeStyle: 'short' });
+    if (!confirm(`Se restaurará la copia local del ${date}. ¿Continuar?`)) return;
+    try {
+      storeLocalSnapshot('antes de restaurar');
+      applyState(backup.data);
+      saveState('restauración local');
+      settingsModal.classList.add('hidden');
+      showToast('Copia local restaurada');
+    } catch (error) {
+      showToast('La copia local no es válida');
+    }
+  });
+
+  const resetModal = document.getElementById('modal-reset');
+  const resetVerified = document.getElementById('input-reset-verified');
+  const resetConfirm = document.getElementById('btn-reset-confirm');
+  let pendingReset = null;
+
+  function closeResetModal() {
+    resetModal.classList.add('hidden');
+    pendingReset = null;
+  }
+
+  function resetSection(message, reason, resetAction) {
+    pendingReset = { reason, resetAction, fingerprint: JSON.stringify(getCurrentState()) };
+    document.getElementById('reset-message').textContent = message;
+    resetVerified.checked = false;
+    resetVerified.disabled = true;
+    resetConfirm.disabled = true;
+    resetConfirm.style.opacity = '0.45';
+    settingsModal.classList.add('hidden');
+    resetModal.classList.remove('hidden');
+  }
+
+  document.getElementById('btn-reset-cancel').addEventListener('click', closeResetModal);
+  document.getElementById('btn-reset-download').addEventListener('click', () => {
+    if (!pendingReset) return;
+    downloadBackup(`antes de ${pendingReset.reason}`);
+    resetVerified.disabled = false;
+    showToast('Comprueba que el archivo se guardó');
+  });
+  resetVerified.addEventListener('change', () => {
+    resetConfirm.disabled = !resetVerified.checked;
+    resetConfirm.style.opacity = resetVerified.checked ? '1' : '0.45';
+  });
+  resetConfirm.addEventListener('click', () => {
+    if (!pendingReset || !resetVerified.checked) return;
+    if (JSON.stringify(getCurrentState()) !== pendingReset.fingerprint) {
+      closeResetModal();
+      showToast('Los datos cambiaron; inicia el proceso otra vez');
+      return;
+    }
+    const { reason, resetAction } = pendingReset;
+    const beforeState = getCurrentState();
+    try {
+      storeLocalSnapshot(`antes de ${reason}`);
+      resetAction();
+      if (!saveState(reason)) throw new Error('No se pudo guardar el cambio');
+      closeResetModal();
+      showToast('Sección restablecida');
+    } catch (error) {
+      applyState(beforeState);
+      render();
+      updateSaveStatus(false);
+      showToast('No se pudo completar el restablecimiento');
+    }
+  });
+
+  document.getElementById('btn-reset-week').addEventListener('click', () => {
+    resetSection('Se eliminarán únicamente los gastos de la semana actual.', 'borrar semana actual', () => {
+      const start = getWeekStart(new Date());
+      const end = new Date(start);
+      end.setDate(end.getDate() + 7);
+      expenses = expenses.filter(item => {
+        const date = new Date(item.date);
+        return date < start || date >= end;
+      });
+    });
+  });
+
+  document.getElementById('btn-reset-history').addEventListener('click', () => {
+    resetSection('Se eliminará todo el historial de gastos. Los gastos fijos y el límite se conservarán.', 'borrar historial', () => {
+      expenses = [];
+    });
+  });
+
+  document.getElementById('btn-reset-all').addEventListener('click', () => {
+    resetSection('Se eliminarán todos los gastos y ajustes, incluida la moneda elegida y los gastos fijos antiguos que permanecen ocultos.', 'restablecer toda la aplicación', () => {
+      weeklyLimit = 100;
+      currentCurrency = 'EUR';
+      expenses = [];
+      fixedExpenses = [];
+      deductFixedFromWeekly = false;
+    });
   });
 
   // Edit Expense Modal
@@ -1002,86 +2000,56 @@
     }
 
     editModal.classList.add('hidden');
-    saveState();
+    saveState('editar gasto');
     showToast('Gasto actualizado');
   });
 
+  function initializeDataProtection() {
+    try {
+      applyState(getCurrentState());
+      const savedAt = writeCurrentState();
+      storeLocalSnapshot(hasConsolidatedState ? 'apertura' : 'migración inicial');
+      const detail = storageReadWarning
+        ? 'Se detectó un dato antiguo dañado. Se conservaron los datos válidos; descarga una copia JSON para mayor seguridad.'
+        : undefined;
+      updateSaveStatus(true, savedAt, detail);
+    } catch (error) {
+      updateSaveStatus(false);
+    }
+  }
+
   // Initial Render
+  initializeDataProtection();
   render();
 </script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      const APP_VERSION = '2026-09-08-2';
-      let registration;
       const updateButton = document.getElementById('btn-check-update');
       const updateNotice = document.getElementById('update-notice');
-      const originalButton = updateButton.innerHTML;
-
       const showUpdateNotice = () => updateNotice.classList.remove('hidden');
-      const watchInstallingWorker = (reg) => {
-        const worker = reg.installing;
-        if (!worker) return;
-        worker.addEventListener('statechange', () => {
-          if (worker.state === 'installed' && navigator.serviceWorker.controller) {
-            showUpdateNotice();
-          }
-        });
-      };
-
-      document.getElementById('btn-close-update-notice').addEventListener('click', () => {
-        updateNotice.classList.add('hidden');
+      document.getElementById('btn-close-update-notice').addEventListener('click', () => updateNotice.classList.add('hidden'));
+      const hadController = Boolean(navigator.serviceWorker.controller);
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (hadController) showUpdateNotice();
       });
-
+      navigator.serviceWorker.register('./gasto-libre-sw.js').catch(() => {});
       updateButton.addEventListener('click', async () => {
         updateButton.disabled = true;
-        updateButton.textContent = '…';
         try {
-          registration ||= await navigator.serviceWorker.getRegistration();
-          if (!registration) {
-            showToast('No se pudo buscar la actualización');
-            return;
-          }
-
-          if (registration.waiting) {
-            showUpdateNotice();
-            return;
-          }
-
-          let updateFound = false;
-          const onUpdateFound = () => {
-            updateFound = true;
-            watchInstallingWorker(registration);
-          };
-          registration.addEventListener('updatefound', onUpdateFound, { once: true });
-          await registration.update();
-          let newestVersion = APP_VERSION;
-          try {
-            const response = await fetch(`./gasto-libre-version.json?check=${Date.now()}`, { cache: 'no-store' });
-            if (response.ok) newestVersion = (await response.json()).version || APP_VERSION;
-          } catch (error) {}
-          await new Promise(resolve => setTimeout(resolve, 1200));
-
-          if (newestVersion !== APP_VERSION || registration.waiting || updateFound) {
-            showUpdateNotice();
-          } else {
-            showToast('Ya tienes la última versión');
-          }
+          const registration = await navigator.serviceWorker.getRegistration();
+          if (registration) await registration.update();
+          const response = await fetch(`./gasto-libre-version.json?check=${Date.now()}`, { cache: 'no-store' });
+          if (!response.ok) throw new Error('Sin conexión');
+          const newestVersion = (await response.json()).version;
+          if (newestVersion !== '2.0.0' || registration?.waiting) showUpdateNotice();
+          else showToast('Ya tienes la última versión');
         } catch (error) {
           showToast('No se pudo buscar la actualización');
         } finally {
           updateButton.disabled = false;
-          updateButton.innerHTML = originalButton;
         }
       });
-
-      navigator.serviceWorker.register('./gasto-libre-sw.js')
-        .then(reg => {
-          registration = reg;
-          reg.addEventListener('updatefound', () => watchInstallingWorker(reg));
-          if (reg.waiting) showUpdateNotice();
-        })
-        .catch(() => {});
     });
   }
 </script>

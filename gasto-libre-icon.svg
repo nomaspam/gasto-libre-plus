@@ -1,8 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#1f6f5c"/>
-  <path d="M121 169c0-25 20-45 45-45h180c25 0 45 20 45 45v177c0 25-20 45-45 45H166c-25 0-45-20-45-45V169Z" fill="#f4f0e4"/>
-  <path d="M121 200h270" stroke="#dcd5c3" stroke-width="19"/>
-  <circle cx="179" cy="274" r="29" fill="#b4791e"/>
-  <path d="M239 258h99M239 291h72" stroke="#1f6f5c" stroke-linecap="round" stroke-width="18"/>
-  <path d="M166 152v33M346 152v33" stroke="#f4f0e4" stroke-linecap="round" stroke-width="19"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Gasto Libre</title>
+  <desc id="desc">Una moneda sin símbolo sale de un sobre blanco sobre fondo violeta.</desc>
+  <rect width="512" height="512" rx="112" fill="#6656B3"/>
+  <circle cx="256" cy="163" r="72" fill="#E89A26"/>
+  <path d="M256 116c8 23 20 35 44 47-24 8-36 20-44 47-8-27-20-39-44-47 24-12 36-24 44-47Z" fill="#FFFFFF"/>
+  <path d="M102 256c0-20 16-36 36-36h236c20 0 36 16 36 36v123c0 20-16 36-36 36H138c-20 0-36-16-36-36V256Z" fill="#FFFFFF"/>
+  <path d="m111 266 145 101 145-101" fill="none" stroke="#C5B9F2" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m112 383 105-86M400 383l-105-86" fill="none" stroke="#E8E2FB" stroke-width="18" stroke-linecap="round"/>
 </svg>
