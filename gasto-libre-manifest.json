@@ -1,7 +1,7 @@
 {
   "name": "Gasto Libre",
   "short_name": "Gasto Libre",
-  "version": "2.1.0",
+  "version": "2.4.0",
   "description": "Tu disponible mensual y registro de gastos.",
   "lang": "es",
   "start_url": "./",
